@@ -1,0 +1,744 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.1">
+    
+    
+      
+        <title>Cloudfront - AWS SA Professional</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.816931ca.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9204c3b2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../..":"../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cloudfront" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AWS SA Professional" class="md-header__button md-logo" aria-label="AWS SA Professional" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AWS SA Professional
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cloudfront
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AWS SA Professional" class="md-nav__button md-logo" aria-label="AWS SA Professional" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AWS SA Professional
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api-gateway/api-gateway/" class="md-nav__link">
+        API Gateway
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Migration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Migration" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Migration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/migration/" class="md-nav__link">
+        6R migration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Security & Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Security & Configuration" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Security & Configuration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/acm/" class="md-nav__link">
+        AWS Certificate Manager
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cloudfront" class="md-nav__link">
+    CloudFront
+  </a>
+  
+    <nav class="md-nav" aria-label="CloudFront">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache-behavior" class="md-nav__link">
+    Cache Behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ttl" class="md-nav__link">
+    TTL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invalidations-cache" class="md-nav__link">
+    Invalidations (cache)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssl" class="md-nav__link">
+    SSL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sni-server-name-indication" class="md-nav__link">
+    SNI - Server Name Indication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#origin-types-an-architecture" class="md-nav__link">
+    Origin Types an Architecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caching-peformance-optimization" class="md-nav__link">
+    Caching Peformance &amp; Optimization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#origin-access-identity-oai-s3-origin" class="md-nav__link">
+    Origin Access Identity (OAI) - S3 Origin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#securing-custom-origins" class="md-nav__link">
+    Securing Custom origins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-distributions" class="md-nav__link">
+    Private Distributions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudfront-geo-restriction" class="md-nav__link">
+    CloudFront Geo Restriction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudfront-field-level-encryption" class="md-nav__link">
+    CloudFront Field-Level Encryption
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lambdaedge" class="md-nav__link">
+    Lambda@Edge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elasticcache" class="md-nav__link">
+    ElasticCache
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>Cloudfront</h1>
+
+<h3 id="cloudfront">CloudFront</h3>
+<p>CloudFront is a Content Delivery network (CDN) within AWS.
+- higher latencies and slow transfer speeds (customers across the globe)
+- solve by using caching and efficient global network</p>
+<h4 id="terms">Terms</h4>
+<ul>
+<li><strong>Origin</strong> - S3 origin or custom origin (publicly routable IP address)</li>
+<li><strong>Distribution</strong> - configuration unit of CloudFront<ul>
+<li>can have multiple origins configured</li>
+</ul>
+</li>
+<li><strong>Edge Location</strong> - Local cache of your data <ul>
+<li>smaller than regions - 200 edge locations</li>
+</ul>
+</li>
+<li><strong>Regional Edge Cache</strong><ul>
+<li>only used by custom origin <strong>NOT</strong> S3 origin</li>
+<li>larger version of edge location. Provides another </li>
+<li>provides another layer of caching</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><img alt="cloud-front" src="../cloud-front.png" /></p>
+<h4 id="cache-behavior">Cache Behavior</h4>
+<ul>
+<li>Default (<em>) - </em><em>path-pattern</em>*</li>
+<li>trusted signers/groups for private</li>
+</ul>
+<p>To delete all cache behaviors in an existing distribution, update the distribution configuration and include only an empty CacheBehaviors element.</p>
+<p>https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.html</p>
+<h4 id="ttl">TTL</h4>
+<ul>
+<li>more frquent cache HITS == lower orign load</li>
+<li>Default TTL (defined in the behavior) == 24 hrs (validity period)</li>
+<li><strong>Minimum TTL</strong> and <strong>Maximum TTL</strong> - default applies if not specified</li>
+<li>limits the object level TTL values</li>
+<li>Origin Header: <strong>Cache-Control max-age</strong> (seconds)</li>
+<li>Origin Header: <strong>Cache-Control s-maxage</strong> (seconds)</li>
+<li>Origin Header: <strong>Expires</strong> (Date &amp; Time)</li>
+<li>Headers can be set using custom origin or s3 origin (via object metadata)</li>
+</ul>
+<h4 id="invalidations-cache">Invalidations (cache)</h4>
+<ul>
+<li>Cache invalidation - performed on a distribution<ul>
+<li>applies to all edge locations - process takes time</li>
+</ul>
+</li>
+<li>Examples of cache invalidations - correct errors</li>
+<li>/images/whiskers1.png</li>
+<li>/images/whiskers*</li>
+<li>/images/*</li>
+<li>/*</li>
+<li>Versioned file names ..  file_v1/file_v2/file_v3 <ul>
+<li>avaoid caching issues - names are different</li>
+<li>logging is more clear</li>
+<li>no frequent cached invalidations</li>
+</ul>
+</li>
+</ul>
+<h4 id="ssl">SSL</h4>
+<ul>
+<li>CloudFront <strong>Default Domain Name</strong> (CNAME)<ul>
+<li>ex - https://random.cloudfront.net/</li>
+</ul>
+</li>
+<li>SSL supported by default ... <strong>*.clodufront.net</strong> cert</li>
+<li><strong>Alternate Domain Names</strong> (CNAMES) ex- cdn.something.com<ul>
+<li>verify ownership (optionally HTTPS) using a matching certificate</li>
+<li>generate or import certs in ACM </li>
+<li>add certficate in <strong>us-east-1</strong> for global service like CloudFront</li>
+</ul>
+</li>
+<li>Cloudfront to allow on one of the options: HTTP or HTTPS, HTTP =&gt; HTTPS, HTTPS Only</li>
+<li>Two SSL connections Viewer =&gt; CloudFront &amp;  CloudFront =&gt; Origin<ul>
+<li>both need valid public certificates (intermediate certs)</li>
+</ul>
+</li>
+</ul>
+<h4 id="sni-server-name-indication">SNI - Server Name Indication</h4>
+<ul>
+<li>SNI is a TLS extension, allowing a <strong>host to be included</strong> -- free of cost<ul>
+<li>host header routing -&gt;&gt; allows multiple hosts/certs behind a single IP </li>
+<li>old browsers don't support SNI .. CF charges extra for dedicated IP ($600)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><img alt="cloudfront-ssl-sni" src="../cloudfront-ssl-sni.png" /></p>
+<h4 id="origin-types-an-architecture">Origin Types an Architecture</h4>
+<ul>
+<li>
+<p>Origins</p>
+<ul>
+<li>aws s3 </li>
+<li>aws media package channel endpoints</li>
+<li>aws media storage container endpoints</li>
+<li>everything else (custom origin) -- web servers</li>
+</ul>
+</li>
+<li>
+<p>Custom origin options:</p>
+<ul>
+<li>SSL protocol - TLS certs</li>
+<li>origin id, domain name, path</li>
+<li>origin protocol</li>
+<li>custom ports</li>
+<li>custom headers</li>
+<li>connection configuration</li>
+</ul>
+</li>
+</ul>
+<h4 id="caching-peformance-optimization">Caching Peformance &amp; Optimization</h4>
+<ul>
+<li><strong>CACHE HIT</strong> = object returned from cache</li>
+<li><strong>CACHE MISS</strong> = object returned from origin </li>
+<li>Headers, Cookies and Query String Parameters can be configured to be forwarded to the origin or not</li>
+<li>Forward what the application needs </li>
+<li><strong>Cache based</strong> on what can <strong>change the objects</strong></li>
+<li>The <strong>more</strong> things are involved in caching - the <strong>less efficient</strong></li>
+</ul>
+<h4 id="origin-access-identity-oai-s3-origin">Origin Access Identity (OAI) - S3 Origin</h4>
+<ul>
+<li>applicable to S3</li>
+<li>type of identity</li>
+<li>assocaited with <strong>Cloudfont Distribution</strong></li>
+<li>CloudFront 'becomes' that <strong>OAI</strong></li>
+<li><strong>OAI</strong> can be used in the <strong>s3 bucket policies</strong><ul>
+<li><span style="color:red">DENY</span> all but <span style="color:green">ALLOW</span> one or more <strong>OAI's</strong> in bucket policy</li>
+</ul>
+</li>
+</ul>
+<h4 id="securing-custom-origins">Securing Custom origins</h4>
+<ul>
+<li>custom origin to require some <strong>custom headers </strong><ul>
+<li><strong>custom headers</strong> are injected within the <strong>cloudfront</strong></li>
+</ul>
+</li>
+<li>custom origin to host behind <strong>firewall</strong> which allows only <strong>public IP ranges of cloudfront </strong></li>
+</ul>
+<h4 id="private-distributions">Private Distributions</h4>
+<ul>
+<li>Public - open access to objects</li>
+<li>Private ... requests required signed Cookie or URL</li>
+<li>1 behavior --&gt; whole distribution <span style="color:green">PUBLIC</span> or <span style="color:red">PRIVATE</span></li>
+<li>Multiple behaviors - combination of <span style="color:green">PUBLIC</span> and <span style="color:red">PRIVATE</span></li>
+<li><strong>CloudFront Key</strong> <ul>
+<li>created by root account user and tied to a specific AWS account</li>
+<li>account with cloudfront key can be added as <strong>TRUSTED SIGNER</strong></li>
+<li>will require signed cookie/url</li>
+</ul>
+</li>
+<li><strong>Signed URL</strong> <ul>
+<li>provides access to one object </li>
+<li>Legcy RTMP distributions <span style="color:red">cant use cookies</span></li>
+<li>use <strong>URL's</strong> if the <span style="color:red">client does not support cookies</span></li>
+</ul>
+</li>
+<li><strong>Signed Cookies</strong><ul>
+<li>Use for <strong>groups</strong> of files/<strong>all files of a type</strong> - .jpeg</li>
+<li>maintain the URL with signed cookies</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><img alt="cloudfront-private" src="../cloudfront-private.png" /></p>
+<h4 id="cloudfront-geo-restriction">CloudFront Geo Restriction</h4>
+<table>
+<thead>
+<tr>
+<th>CF Geo REstriction</th>
+<th>3rd party Geolocation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Whitelist or Blacklist - <span style="color:red">COUNTRY ONLY</span></td>
+<td>completely customizable</td>
+</tr>
+<tr>
+<td>GeoIP Database 99.8%+ Accurate</td>
+<td>more accurate - can be filter on many attributesc</td>
+</tr>
+<tr>
+<td>applies to the entire distribution</td>
+<td></td>
+</tr>
+<tr>
+<td><img alt="cloudfront-georestriction" src="../cloudfront-georestriction.png" /></td>
+<td><img alt="cloudfront-3rd-party" src="../cloudfront-3rd-party.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="cloudfront-field-level-encryption">CloudFront Field-Level Encryption</h4>
+<ul>
+<li>Client &lt;==&gt; Origin can be encrypted using HTTPS<ul>
+<li>data transmitted within is treated like any other plain data</li>
+</ul>
+</li>
+<li>Field Level encryption happens at the edge<ul>
+<li>happens separately from the <strong>HTTPS Tunnel</strong> using public/private key</li>
+<li>private key is needed to decrypt individual fields</li>
+</ul>
+</li>
+</ul>
+<h4 id="lambdaedge">Lambda@Edge</h4>
+<ul>
+<li>run lightweight lambda at edge locations</li>
+<li>adjust data between the viewer and origin</li>
+<li>only supports node.js and python</li>
+<li>runs in the AWS public space --&gt; cannot access any VPC resource</li>
+<li>lambda layers not supported</li>
+<li>
+<p>different limits than normal lambda function</p>
+</li>
+<li>
+<p><strong>Use Cases</strong></p>
+<ul>
+<li>A/B testing - <strong>Viewer Request</strong></li>
+<li>Migration between s3 oriigns - <strong>Origin Request</strong></li>
+<li>Different Objects based on Device - <strong>Origin Request</strong></li>
+<li>Content By Country - <strong>Origin Request</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="elasticcache">ElasticCache</h4>
+<ul>
+<li>in-memory database .. high performance<ul>
+<li>managed redis and memcached -- as a service</li>
+</ul>
+</li>
+<li>can be used to <strong>cache data</strong> - for READ HEAVY workloads with low latency requirements</li>
+<li>Reduces database workloads (expensive)</li>
+<li>Can be used to store Session Data (Stateless Servers)</li>
+<li>requires application code changes</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Memcached</th>
+<th align="left">Redis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">simple data structure - string</td>
+<td align="left">advance structure- list, sets, sorted lists, bit-arrays</td>
+</tr>
+<tr>
+<td align="left">No replication</td>
+<td align="left">Multi-AZ</td>
+</tr>
+<tr>
+<td align="left">Mulitple Nodes(Sharding)</td>
+<td align="left">Replication(Scale Reads)</td>
+</tr>
+<tr>
+<td align="left">No backups</td>
+<td align="left">Backup &amp; Restore</td>
+</tr>
+<tr>
+<td align="left">Multi-threaded</td>
+<td align="left">Transactions</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.01824240.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a87c2adc.min.js"></script>
+      
+    
+  </body>
+</html>
