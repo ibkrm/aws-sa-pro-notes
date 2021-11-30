@@ -35,3 +35,4 @@ nav:
     - DR Storage: dr-bc/dr-storage.md
     - DR Compute: dr-bc/dr-compute.md
     - DR Database: dr-bc/dr-database.md
+    - DR Networking: dr-bc/dr-networking.md
