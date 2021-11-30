@@ -13,7 +13,7 @@
     
     
       
-        <title>CICD - AWS SA Professional</title>
+        <title>DR Networking - AWS SA Professional</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cicd" class="md-skip">
+        <a href="#regional" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CICD
+              DR Networking
             
           </span>
         </div>
@@ -439,12 +439,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -467,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dr-bc/dr-bc-architecture/" class="md-nav__link">
+      <a href="../dr-bc-architecture/" class="md-nav__link">
         DR Architecture
       </a>
     </li>
@@ -481,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dr-bc/dr-storage/" class="md-nav__link">
+      <a href="../dr-storage/" class="md-nav__link">
         DR Storage
       </a>
     </li>
@@ -495,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dr-bc/dr-compute/" class="md-nav__link">
+      <a href="../dr-compute/" class="md-nav__link">
         DR Compute
       </a>
     </li>
@@ -509,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dr-bc/dr-database/" class="md-nav__link">
+      <a href="../dr-database/" class="md-nav__link">
         DR Database
       </a>
     </li>
@@ -521,11 +523,88 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../dr-bc/dr-networking/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          DR Networking
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         DR Networking
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regional" class="md-nav__link">
+    Regional
+  </a>
+  
+    <nav class="md-nav" aria-label="Regional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vpc" class="md-nav__link">
+    VPC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-balancer" class="md-nav__link">
+    Load Balancer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-network" class="md-nav__link">
+    Global Network
+  </a>
+  
+    <nav class="md-nav" aria-label="Global Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#route53" class="md-nav__link">
+    Route53
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -554,8 +633,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -564,30 +641,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aws-codecommit" class="md-nav__link">
-    AWS CodeCommit
+  <a href="#regional" class="md-nav__link">
+    Regional
   </a>
+  
+    <nav class="md-nav" aria-label="Regional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vpc" class="md-nav__link">
+    VPC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-balancer" class="md-nav__link">
+    Load Balancer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#aws-codepipeline" class="md-nav__link">
-    AWS CodePipeline
+  <a href="#global-network" class="md-nav__link">
+    Global Network
+  </a>
+  
+    <nav class="md-nav" aria-label="Global Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#route53" class="md-nav__link">
+    Route53
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#aws-codebuild" class="md-nav__link">
-    AWS CodeBuild
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#aws-codedeploy" class="md-nav__link">
-    AWS CodeDeploy
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -604,71 +700,46 @@
               
                 
 
-<h1 id="cicd">CICD</h1>
-<p><strong>Continuous Integration and Continuous Delivery</strong></p>
-<h3 id="aws-codecommit">AWS CodeCommit</h3>
+  <h1>DR Networking</h1>
+
+<h2 id="regional">Regional</h2>
+<blockquote>
+<p>Public services like <strong>SNS</strong> and <strong>S3</strong> operate from all AZs - only region failure would cause service failure</p>
+</blockquote>
+<p><img alt="dr-networking-regional" src="../dr-networking-regional.png" /></p>
+<h3 id="vpc">VPC</h3>
 <ul>
-<li>similar to gihub</li>
-<li>authentication - iam user </li>
-<li>authorization - iam identity policy </li>
-<li>notifications  - on events</li>
-<li>triggers - on events</li>
-</ul>
-<h3 id="aws-codepipeline">AWS CodePipeline</h3>
-<ul>
-<li><strong>CD</strong> tool </li>
-<li>Orchestration tool for code, build, test and deploy<ul>
-<li>controls the flow from source through build and deployment</li>
+<li>VPC - <strong>regionallly resilient</strong> along with IGW and VPC Router<ul>
+<li>can withstand AZ failure</li>
+<li>only fails when region fails</li>
 </ul>
 </li>
-<li>Pipelines are built form <strong>STAGES</strong></li>
-<li><strong>STAGES</strong> can have sequential or parallel <strong>ACTIONS</strong></li>
-<li>Movement between stages can require <strong>manual approval</strong></li>
-<li>Artifacts can be <strong>loaded into an action</strong>, and <strong>generated from an action</strong></li>
-<li><strong>Stage Changes</strong> =&gt; Event Bridge (eg. success, failed, cancelled)</li>
-<li><strong>CloudTrail</strong> or <strong>Console UI</strong> to view/interact</li>
+<li>Subnet - <strong>AZ failure</strong> will also cause <strong>subnet failure</strong><ul>
+<li>nat gateway fails when AZ fails</li>
 </ul>
-<h3 id="aws-codebuild">AWS CodeBuild</h3>
-<ul>
-<li>Code <strong>Build</strong> as a service - fully managed</li>
-<li><strong>Pay</strong> for the <strong>resource consumed</strong> during <strong>builds</strong></li>
-<li>Alternate to part of jenkins functionality</li>
-<li>Used for <strong>builds and tests</strong></li>
-<li>Uses <strong>docker</strong> for build environment, can be customized</li>
-<li>Integrates with <strong>AWS Services</strong>: KMS,IAM, VPC, CloudTrail, S3...</li>
-<li><strong>Sourced from</strong> -&gt; Github or CodeCommit or CodePipeline or S3</li>
-<li>Customised via <code>buildspec.yml</code> file (root of source)</li>
-<li><strong>Logs</strong> =&gt; CloudWatch, S3</li>
-<li><strong>Metrics</strong> =&gt; CloudWatch</li>
-<li><strong>Events</strong> =&gt; EventBridge (event-driven response)</li>
-<li><strong>supported languages</strong> - java,ruby,python,go,.net,php,node.js</li>
-<li><strong>PHASES</strong><ul>
-<li><strong>install</strong> - install packages in build environment</li>
-<li><strong>pre_build</strong> - sign-in or install dependencies</li>
-<li><strong>build</strong> - commands for the build process</li>
-<li><strong>post_build</strong> - package things up, push docker image, explicit notifications</li>
-<li><code>also support environment variables - shell, variables, parameter-store, secrets-manager</code></li>
-<li><code>artifacts - where to put</code></li>
+</li>
+<li>Interface Endpoint - <strong>AZ failure</strong> will also cause <strong>interface endpoint failure</strong><ul>
+<li>deploy multiple VPCE for regional HA</li>
 </ul>
 </li>
 </ul>
-<h3 id="aws-codedeploy">AWS CodeDeploy</h3>
+<h3 id="load-balancer">Load Balancer</h3>
 <ul>
-<li>Code <strong>Deployment</strong> as a service</li>
-<li><strong>Alternatives</strong> - jenkins, ansible, chef, puppet, cloudformation</li>
-<li>Deploy code.. not resources</li>
-<li>Deploys to <strong>EC2, On-premises, Lambda and ECS</strong></li>
-<li>Also deploys web, configuration, EXE files, Packages, Scripts, media and more ..</li>
-<li>CodeDeploy integrates with AWS services and <strong>AWS Code* tools</strong></li>
-<li>For <strong>On-premise and EC2</strong> - Codedeploy <strong>agent</strong> needs to be installed</li>
-<li><code>Appsec.yml</code> - yaml or json <a href="https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure.html">reference link</a><ul>
-<li><strong>Files</strong> (EC2/On-premise)</li>
-<li><strong>Permissions</strong> (EC2/On-premise)</li>
-<li><strong>Resources</strong> (ECS/Lambda)</li>
-<li><strong>Hooks</strong> (ECS/Lambda/EC2/On-premise) - <a href="https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html">reference link</a><ul>
-<li>Lifecycle hooks are different for each type of deployments.</li>
+<li>Consists of LB nodes in 2+ AZs - regionally resilient<ul>
+<li>as long as one node is functional, LB is functional</li>
 </ul>
 </li>
+<li>Can withstand AZ failure<ul>
+<li>only fails when entire region fails</li>
+</ul>
+</li>
+</ul>
+<h2 id="global-network">Global Network</h2>
+<h3 id="route53">Route53</h3>
+<ul>
+<li>Global Service</li>
+<li>Route53 to point to services in mulitple regions provide global discoverability and resilience<ul>
+<li>configuration to not route to unhealhty region (regional health check)</li>
 </ul>
 </li>
 </ul>
@@ -681,6 +752,26 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../dr-database/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DR Database" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              DR Database
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
