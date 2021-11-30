@@ -13,7 +13,7 @@
     
     
       
-        <title>CloudHSM - AWS SA Professional</title>
+        <title>DR Architecture - AWS SA Professional</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cloudhsm" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CloudHSM
+              DR Architecture
             
           </span>
         </div>
@@ -265,14 +265,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -295,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guardduty/" class="md-nav__link">
+      <a href="../../security-config/guardduty/" class="md-nav__link">
         AWS Guard Duty
       </a>
     </li>
@@ -309,7 +307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../config/" class="md-nav__link">
+      <a href="../../security-config/config/" class="md-nav__link">
         AWS Config
       </a>
     </li>
@@ -323,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../inspector/" class="md-nav__link">
+      <a href="../../security-config/inspector/" class="md-nav__link">
         AWS Inspector
       </a>
     </li>
@@ -337,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../key-management-service/" class="md-nav__link">
+      <a href="../../security-config/key-management-service/" class="md-nav__link">
         Key Management Service
       </a>
     </li>
@@ -349,61 +347,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          CloudHSM
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../security-config/cloud-hsm/" class="md-nav__link">
         CloudHSM
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cloudhsm" class="md-nav__link">
-    CloudHSM
-  </a>
-  
-    <nav class="md-nav" aria-label="CloudHSM">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    Use Cases
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -415,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../acm/" class="md-nav__link">
+      <a href="../../security-config/acm/" class="md-nav__link">
         AWS Certificate Manager
       </a>
     </li>
@@ -429,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../parameter-store/" class="md-nav__link">
+      <a href="../../security-config/parameter-store/" class="md-nav__link">
         AWS Parameter Store
       </a>
     </li>
@@ -443,7 +391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secrets-manager/" class="md-nav__link">
+      <a href="../../security-config/secrets-manager/" class="md-nav__link">
         AWS Secrets Manager
       </a>
     </li>
@@ -457,7 +405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vpc-flowlogs/" class="md-nav__link">
+      <a href="../../security-config/vpc-flowlogs/" class="md-nav__link">
         VPC Flow Logs
       </a>
     </li>
@@ -471,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../waf-shield/" class="md-nav__link">
+      <a href="../../security-config/waf-shield/" class="md-nav__link">
         AWS Shield & WAF
       </a>
     </li>
@@ -491,12 +439,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -517,11 +467,76 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../dr-bc/dr-bc-architecture/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          DR Architecture
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         DR Architecture
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-and-restore" class="md-nav__link">
+    Backup and Restore
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilot-light" class="md-nav__link">
+    Pilot Light
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warm-standby" class="md-nav__link">
+    Warm Standby
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activeactive" class="md-nav__link">
+    Active/Active
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -533,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dr-bc/dr-storage/" class="md-nav__link">
+      <a href="../dr-storage/" class="md-nav__link">
         DR Storage
       </a>
     </li>
@@ -547,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dr-bc/dr-compute/" class="md-nav__link">
+      <a href="../dr-compute/" class="md-nav__link">
         DR Compute
       </a>
     </li>
@@ -561,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dr-bc/dr-database/" class="md-nav__link">
+      <a href="../dr-database/" class="md-nav__link">
         DR Database
       </a>
     </li>
@@ -600,22 +615,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cloudhsm" class="md-nav__link">
-    CloudHSM
-  </a>
-  
-    <nav class="md-nav" aria-label="CloudHSM">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    Use Cases
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#backup-and-restore" class="md-nav__link">
+    Backup and Restore
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilot-light" class="md-nav__link">
+    Pilot Light
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warm-standby" class="md-nav__link">
+    Warm Standby
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activeactive" class="md-nav__link">
+    Active/Active
+  </a>
   
 </li>
       
@@ -632,48 +662,53 @@
               
                 
 
-  <h1>CloudHSM</h1>
+  <h1>DR Architecture</h1>
 
-<h2 id="cloudhsm">CloudHSM</h2>
+<h3 id="overview">Overview</h3>
 <ul>
-<li><strong>HSM</strong> - hardware security module to manage cryprtographic operations</li>
-<li><strong>AWS</strong> provisioned it but <span style="color:red;font-weight:bold">full managed by customer</span></li>
-<li><a href="https://en.wikipedia.org/wiki/FIPS_140-2">Federal Information Processing Standard Publication 140-2, (FIPS PUB 140-2)</a></li>
-<li>Fully <strong>FIPS 140-2 Level 3</strong> (<em>KMS is L2 overall, some L3</em>)</li>
-<li>KMS can use <strong>CloudHSM</strong> as a <strong>custom key store</strong>, CloudHSM integration with KMS (newer feature)</li>
+<li>Efffective DR/BC <strong>costs money</strong> all of the time</li>
+<li>Need extra resource (backup or standby resources)</li>
+<li>Executing a DR/BC process <strong>takes time</strong></li>
+<li>Cost Trade Off: Faster to Recover - more costilier</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>CloudHSM</th>
-<th>KMS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>FIPS 140-2 level3</td>
-<td>FIPS 140-2 level 2 (some L3)</td>
-</tr>
-<tr>
-<td>Industry Standard API - <strong>PKCS#11</strong>,Java Cryptography Extenstion (<strong>JCE</strong>), Microsoft <strong>CryptoNG</strong> (CNG) libraries</td>
-<td>Communicated via AWS API</td>
-</tr>
-</tbody>
-</table>
+<h3 id="backup-and-restore">Backup and Restore</h3>
 <ul>
-<li>Configure HSM in cluster mode to ensure HA mode (multi AZ). By default, it does not run on HA mode.</li>
+<li>Have backups in place -- in an event of disaster restore them in different site/location</li>
+<li>Cost effective but will takes longer to restore in case disaster happens</li>
 </ul>
-<p><img alt="cloudhsm" src="../cloudhsm.png" /></p>
-<h3 id="use-cases">Use Cases</h3>
+<p></br></p>
+<p><img alt="backup-restore" src="../backup-restore.png" /></p>
+<h3 id="pilot-light">Pilot Light</h3>
 <ul>
-<li>No native AWS integration .. e.g. no s3 SSE<ul>
-<li>client side encryption can be used before uploading</li>
+<li>Secondary environment with bare minimum set up for faster recovery<ul>
+<li>auto sync data for Databases which are ready to use</li>
+<li>provisioned but stopped instances</li>
 </ul>
 </li>
-<li>Offload the SSL/TLS Processing of Web Servers.</li>
-<li>Enable Transparent Data Encryption (TDE) for Oracle Databases</li>
-<li>Protect the Private Keys for an Issuing Certificate Authority (CA)</li>
 </ul>
+<p></br></p>
+<p><img alt="pilot-light" src="../pilot-light.png" /></p>
+<h3 id="warm-standby">Warm Standby</h3>
+<ul>
+<li>Standby secondary site running the fully functional version of primary infra but with less resources and size.<ul>
+<li>cheaper instance type</li>
+<li>lower no. of intances in ASG</li>
+<li>can be upgraded/updated when failover is required</li>
+</ul>
+</li>
+<li>Little costlier than pilot light (<strong>cheaper than active/active</strong>) but faster to recover in case of disaster</li>
+</ul>
+<p><img alt="warm-standby" src="../warm-standby.png" /></p>
+<h3 id="activeactive">Active/Active</h3>
+<ul>
+<li>Have exact and fully functional version of primary infrastructure running in secondary site/location</li>
+<li>The most costliest (<strong>200%</strong>) set-up but does not require recovery during disaster event</li>
+<li>Since both sites run fully functional apps, they can be load balanced as well<ul>
+<li>provides better <strong>performance</strong> and improves <strong>HA</strong></li>
+</ul>
+</li>
+</ul>
+<p><img alt="active-active" src="../active-active.png" /></p>
 
               
             </article>
@@ -687,7 +722,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../key-management-service/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Key Management Service" rel="prev">
+        <a href="../../security-config/waf-shield/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AWS Shield &amp; WAF" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -696,20 +731,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Key Management Service
+              AWS Shield & WAF
             </div>
           </div>
         </a>
       
       
         
-        <a href="../acm/" class="md-footer__link md-footer__link--next" aria-label="Next: AWS Certificate Manager" rel="next">
+        <a href="../dr-storage/" class="md-footer__link md-footer__link--next" aria-label="Next: DR Storage" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              AWS Certificate Manager
+              DR Storage
             </div>
           </div>
           <div class="md-footer__button md-icon">

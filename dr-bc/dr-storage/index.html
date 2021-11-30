@@ -13,7 +13,7 @@
     
     
       
-        <title>Secretes manager - AWS SA Professional</title>
+        <title>DR Storage - AWS SA Professional</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-secrets-manager" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Secretes manager
+              DR Storage
             
           </span>
         </div>
@@ -293,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guardduty/" class="md-nav__link">
+      <a href="../../security-config/guardduty/" class="md-nav__link">
         AWS Guard Duty
       </a>
     </li>
@@ -307,7 +307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../config/" class="md-nav__link">
+      <a href="../../security-config/config/" class="md-nav__link">
         AWS Config
       </a>
     </li>
@@ -321,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../inspector/" class="md-nav__link">
+      <a href="../../security-config/inspector/" class="md-nav__link">
         AWS Inspector
       </a>
     </li>
@@ -335,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../key-management-service/" class="md-nav__link">
+      <a href="../../security-config/key-management-service/" class="md-nav__link">
         Key Management Service
       </a>
     </li>
@@ -349,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cloud-hsm/" class="md-nav__link">
+      <a href="../../security-config/cloud-hsm/" class="md-nav__link">
         CloudHSM
       </a>
     </li>
@@ -363,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../acm/" class="md-nav__link">
+      <a href="../../security-config/acm/" class="md-nav__link">
         AWS Certificate Manager
       </a>
     </li>
@@ -377,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../parameter-store/" class="md-nav__link">
+      <a href="../../security-config/parameter-store/" class="md-nav__link">
         AWS Parameter Store
       </a>
     </li>
@@ -391,7 +391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secrets-manager.md" class="md-nav__link">
+      <a href="../../security-config/secrets-manager/" class="md-nav__link">
         AWS Secrets Manager
       </a>
     </li>
@@ -405,7 +405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vpc-flowlogs/" class="md-nav__link">
+      <a href="../../security-config/vpc-flowlogs/" class="md-nav__link">
         VPC Flow Logs
       </a>
     </li>
@@ -419,8 +419,165 @@
   
   
     <li class="md-nav__item">
-      <a href="../waf-shield/" class="md-nav__link">
+      <a href="../../security-config/waf-shield/" class="md-nav__link">
         AWS Shield & WAF
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          DR & BC
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="DR & BC" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          DR & BC
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dr-bc-architecture/" class="md-nav__link">
+        DR Architecture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          DR Storage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        DR Storage
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instance-store-volumes" class="md-nav__link">
+    Instance Store Volumes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ebs-elastic-block-storage" class="md-nav__link">
+    EBS - Elastic Block Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3" class="md-nav__link">
+    S3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#efs-elastic-file-system" class="md-nav__link">
+    EFS - Elastic File System
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dr-compute/" class="md-nav__link">
+        DR Compute
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dr-database/" class="md-nav__link">
+        DR Database
       </a>
     </li>
   
@@ -458,8 +615,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aws-secrets-manager" class="md-nav__link">
-    AWS Secrets Manager
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instance-store-volumes" class="md-nav__link">
+    Instance Store Volumes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ebs-elastic-block-storage" class="md-nav__link">
+    EBS - Elastic Block Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3" class="md-nav__link">
+    S3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#efs-elastic-file-system" class="md-nav__link">
+    EFS - Elastic File System
   </a>
   
 </li>
@@ -477,22 +662,59 @@
               
                 
 
-  <h1>Secretes manager</h1>
+  <h1>DR Storage</h1>
 
-<h2 id="aws-secrets-manager">AWS Secrets Manager</h2>
+<h3 id="overview">Overview</h3>
+<p><img alt="dr-storage" src="../dr-storage.png" /></p>
+<h3 id="instance-store-volumes">Instance Store Volumes</h3>
 <ul>
-<li>Shares <strong>functionality</strong> with Parameter Store</li>
-<li>Designed for <strong>secrets</strong> .. (passwords, API Keys)</li>
-<li>Usable via <strong>Console, CLI, API or SDK's</strong> (integration)</li>
-<li>Supports <strong>automatic rotation</strong> .. this uses <strong>Lambda</strong></li>
-<li>Directly <strong>integrates</strong> with some AWS produts like <strong>RDS</strong><ul>
-<li>sync the authectication creds as well</li>
+<li>Attached with EC2 and no recovery in case of failure - temporary solution</li>
+<li>Fails when .. <ul>
+<li>hardware fails</li>
+<li>AZ fails</li>
+<li>EC2 host fails</li>
 </ul>
 </li>
-<li>Permissions controlled by IAM</li>
-<li>Secrets are encrypted using <strong>KMS</strong></li>
 </ul>
-<p><img alt="secrets-manager" src="../secrets-manager.png" /></p>
+<h3 id="ebs-elastic-block-storage">EBS - Elastic Block Storage</h3>
+<ul>
+<li>Runs in one AZ </li>
+<li>No replication of data from one AZ to another</li>
+<li>Fails when ..<ul>
+<li>AZ fails</li>
+</ul>
+</li>
+<li>Snapshots of EBS volume can be stored in S3<ul>
+<li>but those snapshots can be used directly</li>
+<li>restore by creating new volume in different AZ if required</li>
+</ul>
+</li>
+</ul>
+<h3 id="s3">S3</h3>
+<ul>
+<li>
+<p>Replication runs in 3 AZs</p>
+<ul>
+<li>One Zone storage class does not replicate beyond one AZ but cheaper</li>
+</ul>
+</li>
+<li>
+<p>Snapshots stored in s3 gets regional resilience </p>
+</li>
+<li>Snapshots shared and copy across multiple S3 buckets across multiple regions<ul>
+<li>Cross-Region Replication</li>
+</ul>
+</li>
+</ul>
+<h3 id="efs-elastic-file-system">EFS - Elastic File System</h3>
+<ul>
+<li>Replicated accross multiple AZs</li>
+<li>mounted to Linux ec2</li>
+<li>Fails when..<ul>
+<li>Region fails</li>
+</ul>
+</li>
+</ul>
 
               
             </article>
@@ -502,6 +724,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../dr-bc-architecture/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DR Architecture" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              DR Architecture
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../dr-compute/" class="md-footer__link md-footer__link--next" aria-label="Next: DR Compute" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              DR Compute
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
