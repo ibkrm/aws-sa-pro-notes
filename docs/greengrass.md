@@ -11,4 +11,6 @@ AWS IoT Greengrass makes it possible for customers to build IoT devices and appl
 
 In AWS IoT Greengrass, devices securely communicate on a **local network and exchange messages with each other without having to connect to the cloud**. AWS IoT Greengrass provides a **local pub/sub message manager that can intelligently buffer messages if connectivity is lost** so that inbound and outbound messages to the cloud are preserved.
 
+</br>
+
 ![aws-greengrass](aws-greengrass.png)

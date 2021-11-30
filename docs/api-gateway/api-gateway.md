@@ -1,5 +1,5 @@
 
-### API Gateway
+# API Gateway
 - create and manage APIs
 - highly available and scalable
 - handles authorization, throttling, caching, CORS, transformations, OpenAPI spec
@@ -7,15 +7,15 @@
 - public services - both on-premise and AWS
 - HTTP APIs, REST APIs and Websocket APIs
 
-#### Overview
+### Overview
 
 ![alt overview](api-gateway-overview.png)
 
-#### Authentication
+### Authentication
 
 ![alt authentication](api-gateway-auth.png)
 
-#### Endpoint Types
+### Endpoint Types
 - **Edge Optimized**
     - routed to the nearest cloudfront POP (point of presence)
 - **Regional**
@@ -23,11 +23,11 @@
 - **Private**
     - endpoint accessible only withing a VPC via interface endpoint
 
-#### Stages
+### Stages
 
 ![alt stages](api-gateway-stages.png)
 
-#### Error Codes
+### Error Codes
 - 4XX - Client Error - Invalid request on client side
 - 5XX - Server Error - Valid request, backend issue
 - API Gateway Timeout Limit - 29s
@@ -44,16 +44,16 @@
 503	| Service Unavailable Exception	| Yes |
 504	| Endpoint Request Timed-out Exception 	| Yes if idempotent |
 
-#### Caching
+### Caching
 Caching is done per stage.
 
 ![alt stages](api-gateway-caching.png)
 
-#### Methods and Resources
+### Methods and Resources
 
 ![alt stages](api-gateway-methods-resources.png)
 
-#### Integrations
+### Integrations
 
 - API methods are integrated with a backend endpoint
     - **MOCK** - test without backend 
@@ -73,7 +73,7 @@ Caching is done per stage.
 ![alt stages](api-gateway-integration.png)
 ![alt stages](api-gateway-integration-all.png)
 
-#### Stages and Deployments
+### Stages and Deployments
 - Changes made in API gateway are not LIVE
 - The current API state needs to be deployed to a stage
 - Stages can be environments (PROD, DEV, TEST)
@@ -83,7 +83,7 @@ Caching is done per stage.
 
 ![alt stages](api-gateway-stages-deploy.png)
 
-#### Swagger and OpenAPI
+### **Swagger and OpenAPI**
 - OpenAPI (OAS) formally known as swagger
 - Swagger = OpenAPI V2
 - OpenAPI V3 is a more recent version
