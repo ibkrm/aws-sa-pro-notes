@@ -30,3 +30,8 @@ nav:
     - AWS Secrets Manager: security-config/secrets-manager.md
     - VPC Flow Logs: security-config/vpc-flowlogs.md
     - AWS Shield & WAF: security-config/waf-shield.md
+  - DR & BC:
+    - DR Architecture: dr-bc/dr-bc-architecture.md
+    - DR Storage: dr-bc/dr-storage.md
+    - DR Compute: dr-bc/dr-compute.md
+    - DR Database: dr-bc/dr-database.md
