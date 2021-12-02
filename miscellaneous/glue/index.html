@@ -13,7 +13,7 @@
     
     
       
-        <title>Elasic beanstalk - AWS SA Professional</title>
+        <title>AWS Glue - AWS SA Professional</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#elastic-beanstalk" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Elasic beanstalk
+              AWS Glue
             
           </span>
         </div>
@@ -543,12 +543,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -571,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/lex-connect/" class="md-nav__link">
+      <a href="../lex-connect/" class="md-nav__link">
         AWS Lex & Connect
       </a>
     </li>
@@ -585,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/rekognition/" class="md-nav__link">
+      <a href="../rekognition/" class="md-nav__link">
         AWS Rekognition
       </a>
     </li>
@@ -599,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/kinesis-video-streams/" class="md-nav__link">
+      <a href="../kinesis-video-streams/" class="md-nav__link">
         Kines Video Streams
       </a>
     </li>
@@ -611,11 +613,55 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../miscellaneous/glue/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          AWS Glue
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         AWS Glue
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aws-glue-data-catalog" class="md-nav__link">
+    AWS Glue - Data Catalog
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -627,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/device-farm/" class="md-nav__link">
+      <a href="../device-farm/" class="md-nav__link">
         AWS Device Farm
       </a>
     </li>
@@ -666,64 +712,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#elastic-beanstalk" class="md-nav__link">
-    Elastic Beanstalk
-  </a>
-  
-    <nav class="md-nav" aria-label="Elastic Beanstalk">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#eb-application" class="md-nav__link">
-    EB - Application
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#eb-deployment-policies" class="md-nav__link">
-    EB - Deployment Policies
+      
+        <li class="md-nav__item">
+  <a href="#aws-glue-data-catalog" class="md-nav__link">
+    AWS Glue - Data Catalog
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eb-and-rds" class="md-nav__link">
-    EB and RDS
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eb-customisation" class="md-nav__link">
-    EB customisation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eb-https" class="md-nav__link">
-    EB &amp; HTTPS
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eb-cloning" class="md-nav__link">
-    EB cloning
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eb-and-docker" class="md-nav__link">
-    EB and Docker
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -740,118 +738,38 @@
               
                 
 
-  <h1>Elasic beanstalk</h1>
+  <h1>AWS Glue</h1>
 
-<h2 id="elastic-beanstalk">Elastic Beanstalk</h2>
+<h3 id="overview">Overview</h3>
 <ul>
-<li><strong>PaaS</strong> - Platform as a service </li>
-<li><strong>Developer Focused</strong> - not end user</li>
-<li>Great for smaller development teams</li>
-<li>High level - <strong>Managed Application Environment</strong></li>
-<li><strong>User Provide code</strong> and <strong>EB handles the environment</strong></li>
-<li>Focus on code, <strong>low infrastructure overhead</strong></li>
-<li><strong>Fully customisable</strong> - uses AWS products under the covers</li>
-<li><strong>Requires application changes</strong> .. does not come for free</li>
-<li><span style="color:red;font-weight:bold">Databases OUTSIDE of Elastic BeanStalk   </span></li>
-<li><span style="color:red;font-weight:bold">DB in env are lost if env is deleted</span> </li>
-</ul>
-<p>### EB - Platforms
-- <strong>Built-in languages</strong>
-    - Go, java, java + tomcat, .NET Core(linux) &amp; .NET (Windows)
-    - nodejs, python, pho, ruby
-- <strong>Docker</strong>
-    - single container docker
-    - multi container docker (ECS behind the scene)
-    - preconfigured docker for unsupported runtime (glassfish java8)
-- <strong>Cutom</strong>
-    - use <strong>packer</strong> to create custom platform</p>
-<h3 id="eb-application">EB - Application</h3>
-<ul>
-<li>Collection of things relating to an application</li>
-<li><strong>Versions</strong> of application is stored in S3 and sourcable (zip or war)</li>
-<li><strong>Environments</strong> <ul>
-<li>containers of infrastructure running a specific versions</li>
-<li>each environment has it own <strong>CNAME</strong></li>
-<li><strong>CNAME Swap</strong> to enable blue/green deployment</li>
-<li><strong>web server tier</strong> - usually service traffic from <strong>load balancers</strong> </li>
-<li><strong>worker tier</strong> - processing requests from queue like <strong>SQS</strong></li>
+<li><span style="color:orange;font-weight:bold">Serverless ETL (Extract, Transform &amp; Load) </span> service<ul>
+<li>different than <strong>datapipeline</strong> (which can do ETL) and uses servers (<strong>EMR</strong>)</li>
 </ul>
 </li>
-</ul>
-<h3 id="eb-deployment-policies">EB - Deployment Policies</h3>
-<ul>
-<li><strong>All at once</strong> -  deploy to all at once, brief outage</li>
-<li><strong>Rolling</strong> - deploy in rolling batches</li>
-<li><strong>Rolling with additional batch</strong> - as above, with new batch to maintain capacity during the process<ul>
-<li>150 % of capacity depending on the configuration</li>
-<li>both versions serving traffic at one point</li>
+<li><strong>Moves</strong> and <strong>Transforms</strong> data between <strong>source</strong> and <strong>destination</strong><ul>
+<li>use glue job to enrich data in serverless way</li>
 </ul>
 </li>
-<li><strong>Immutable</strong> - all new instances with new version<ul>
-<li>create another set of ASG</li>
-<li>delete the old ASG</li>
+<li><strong>Crawls</strong> data sources and generates the <strong>AWS Glue Data Catalog</strong></li>
+<li>Data <strong>Source:Store</strong> - S3, RDS, JDBC compatible &amp; DynamoDB</li>
+<li>Data <strong>Source:Streams</strong> - Kinesis Data Stream &amp; Apache Kafka</li>
+<li>Data <strong>Targets</strong> - S3, RDS, JDBC Databases</li>
+</ul>
+<h3 id="aws-glue-data-catalog">AWS Glue - Data Catalog</h3>
+<ul>
+<li><strong>Persistent metadata</strong> about data sources within a region</li>
+<li><strong>One catalog</strong> per <strong>region</strong> per <strong>account</strong><ul>
+<li><span style="color:red;font-weight:bold">Avoids data silos.. </span></li>
 </ul>
 </li>
-<li><strong>Traffic Splitting</strong> - fresh instances, with a traffic split (A/B testing)</li>
-</ul>
-<h3 id="eb-and-rds">EB and RDS</h3>
-<ul>
-<li>RDS provisioned with EB is associated with EB and will be deleted once EB environment is deleted.</li>
-<li>Different data in different environment (different RDS)</li>
-<li>environment properties: <code>RDS_HOSTNAME</code>, <code>RDS_PORT</code>, <code>RDS_DB_NAME</code>, <code>RDS_USERNAME</code>, <code>RDS_PASSWORD</code></li>
-<li>RDS provisioned outside EB should configure above properties as environemnt variables</li>
-<li><strong>Steps to decouple exsiting RDS</strong><ul>
-<li>create snapshot of RDS</li>
-<li>enable termination protection</li>
-<li>create another EB environment with same verison without RDS</li>
-<li>ensure the EB new environment can connect to RDS</li>
-<li>make the CNAME switch from old to new environment</li>
-<li>delete the old EB environment</li>
-<li>clean up the failed cloudformation stack and retain the RDS created via CFN stack </li>
+<li><span style="color:orange;font-weight:bold">Amazon Athena, Redshift Spectrum, EMR &amp; AWS Lake Formation all use Data Catalog</span><ul>
+<li>configure crawlers for data sources</li>
 </ul>
 </li>
+<li><strong>Either AWS Glue or datapipeline</strong></li>
 </ul>
-<h3 id="eb-customisation">EB customisation</h3>
-<ul>
-<li><a href="https://github.com/awsdocs/elastic-beanstalk-samples/tree/master/configuration-files">link to extensions files</a></li>
-<li>extension folder - <code>.ebextensions</code><ul>
-<li>config file (yaml or json) ends with <code>.config</code></li>
-</ul>
-</li>
-</ul>
-<h3 id="eb-https">EB &amp; HTTPS</h3>
-<ul>
-<li>apply SSL cert to the load balancer directly via EB console</li>
-<li><strong>OR</strong> apply via <code>.ebextensions/securelistener-[alb][nlb].config</code></li>
-</ul>
-<pre><code class="language-yaml">option_settings:
-aws:elbv2:listener:443:
-    ListernerEnabled: 'true'
-    Protocol: HTTPS
-    SSLCertificateArns: arn:....
-</code></pre>
-<h3 id="eb-cloning">EB cloning</h3>
-<ul>
-<li>Clone an existing env to another</li>
-<li>Update the new env once the cloning is complete</li>
-<li>RDS data is not copied during cloning</li>
-<li>Changes outside the EB will not be copied</li>
-</ul>
-<h3 id="eb-and-docker">EB and Docker</h3>
-<ul>
-<li><strong>Single container</strong> application<ul>
-<li>Dockerfile</li>
-<li>docker-compose</li>
-</ul>
-</li>
-<li><strong>Mutiple container</strong> applications<ul>
-<li>ECS cluster</li>
-<li>EC2 instances provisioned in the cluster and ELB for HA</li>
-<li>Dockerrun.aws.json (V2) file in root of application source code</li>
-<li>Docker image will have to be stored in docker registry like ECR</li>
-</ul>
-</li>
-</ul>
+<p></br></p>
+<p><img alt="aws-glue" src="../aws-glue.png" /></p>
 
               
             </article>
@@ -861,6 +779,41 @@ aws:elbv2:listener:443:
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../kinesis-video-streams/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kines Video Streams" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Kines Video Streams
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../device-farm/" class="md-footer__link md-footer__link--next" aria-label="Next: AWS Device Farm" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              AWS Device Farm
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
