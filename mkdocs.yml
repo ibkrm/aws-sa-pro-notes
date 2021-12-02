@@ -36,3 +36,9 @@ nav:
     - DR Compute: dr-bc/dr-compute.md
     - DR Database: dr-bc/dr-database.md
     - DR Networking: dr-bc/dr-networking.md
+  - Miscellaneous:
+    - AWS Lex & Connect: miscellaneous/lex-connect.md
+    - AWS Rekognition: miscellaneous/rekognition.md
+    - Kines Video Streams: miscellaneous/kinesis-video-streams.md
+    - AWS Glue: miscellaneous/glue.md
+    - AWS Device Farm: miscellaneous/device-farm.md

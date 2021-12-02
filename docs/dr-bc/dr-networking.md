@@ -23,4 +23,3 @@
 - Global Service
 - Route53 to point to services in mulitple regions provide global discoverability and resilience
     - configuration to not route to unhealhty region (regional health check)
-
