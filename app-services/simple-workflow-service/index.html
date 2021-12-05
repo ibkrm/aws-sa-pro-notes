@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.1">
     
     
       
-        <title>Step functions - AWS SA Professional</title>
+        <title>Simple workflow service - AWS SA Professional</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.816931ca.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.816931ca.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.9204c3b2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9204c3b2.min.css">
         
       
     
@@ -29,12 +29,12 @@
       
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:""}</style>
       
     
     
-    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"..":".."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
+    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../..":"../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
     
       
 
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#limitations-of-lambda" class="md-skip">
+        <a href="#simple-workflow-service-swf" class="md-skip">
           Skip to content
         </a>
       
@@ -77,7 +77,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="AWS SA Professional" class="md-header__button md-logo" aria-label="AWS SA Professional" data-md-component="logo">
+    <a href="../.." title="AWS SA Professional" class="md-header__button md-logo" aria-label="AWS SA Professional" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Step functions
+              Simple workflow service
             
           </span>
         </div>
@@ -110,7 +110,7 @@
           <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
             </label>
           
         
@@ -119,7 +119,7 @@
           <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
             </label>
           
         
@@ -185,7 +185,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="AWS SA Professional" class="md-nav__button md-logo" aria-label="AWS SA Professional" data-md-component="logo">
+    <a href="../.." title="AWS SA Professional" class="md-nav__button md-logo" aria-label="AWS SA Professional" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -203,8 +203,84 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Accounts and Permissions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Accounts and Permissions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Accounts and Permissions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../api-gateway/api-gateway/" class="md-nav__link">
+      <a href="../../permission-and-accounts/security-token-service/" class="md-nav__link">
+        AWS STS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../permission-and-accounts/aws-organizations/" class="md-nav__link">
+        AWS Organizations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../permission-and-accounts/resource-access-manager/" class="md-nav__link">
+        AWS Resource Access Manager
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api-gateway/api-gateway/" class="md-nav__link">
         API Gateway
       </a>
     </li>
@@ -218,217 +294,10 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Migration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Migration" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Migration
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../migration/migration/" class="md-nav__link">
-        6R migration
+      <a href="../../cloudfront/cloudfront/" class="md-nav__link">
+        CloudFront
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Security & Configuration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Security & Configuration" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Security & Configuration
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/guardduty/" class="md-nav__link">
-        AWS Guard Duty
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/config/" class="md-nav__link">
-        AWS Config
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/inspector/" class="md-nav__link">
-        AWS Inspector
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/key-management-service/" class="md-nav__link">
-        Key Management Service
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/cloud-hsm/" class="md-nav__link">
-        CloudHSM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/acm/" class="md-nav__link">
-        AWS Certificate Manager
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/parameter-store/" class="md-nav__link">
-        AWS Parameter Store
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/secrets-manager/" class="md-nav__link">
-        AWS Secrets Manager
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/vpc-flowlogs/" class="md-nav__link">
-        VPC Flow Logs
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-config/waf-shield/" class="md-nav__link">
-        AWS Shield & WAF
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -450,14 +319,14 @@
       
       
         <label class="md-nav__link" for="__nav_4">
-          DR & BC
+          Serverless
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="DR & BC" data-md-level="1">
+      <nav class="md-nav" aria-label="Serverless" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          DR & BC
+          Serverless
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -467,8 +336,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../dr-bc/dr-bc-architecture/" class="md-nav__link">
-        DR Architecture
+      <a href="../../serverless/step-functions/" class="md-nav__link">
+        Step Functions
       </a>
     </li>
   
@@ -481,50 +350,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../dr-bc/dr-storage/" class="md-nav__link">
-        DR Storage
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dr-bc/dr-compute/" class="md-nav__link">
-        DR Compute
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dr-bc/dr-database/" class="md-nav__link">
-        DR Database
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dr-bc/dr-networking/" class="md-nav__link">
-        DR Networking
+      <a href="../../serverless/serverless-application-model/" class="md-nav__link">
+        AWS SAM
       </a>
     </li>
   
@@ -554,12 +381,512 @@
       
       
         <label class="md-nav__link" for="__nav_5">
+          Deployment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Deployment" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Deployment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/ci-cd/" class="md-nav__link">
+        CICD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/elastic-beanstalk/" class="md-nav__link">
+        Elastic BeanStalk
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/opsworks/" class="md-nav__link">
+        AWS Opsworks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/service-catalog/" class="md-nav__link">
+        AWS Service Catalog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/systems-manager/" class="md-nav__link">
+        AWS Systems Manager
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Migration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Migration" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Migration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/migration/" class="md-nav__link">
+        6R migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/migration-database/" class="md-nav__link">
+        Database Migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/migration-virtual-machines/" class="md-nav__link">
+        Virtual Machinne Migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/storage-gateway/" class="md-nav__link">
+        Storage Gateway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/snowball/" class="md-nav__link">
+        AWS Snowball
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/datasync/" class="md-nav__link">
+        AWS Datasync
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Security & Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Security & Configuration" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Security & Configuration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/guardduty/" class="md-nav__link">
+        AWS Guard Duty
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/config/" class="md-nav__link">
+        AWS Config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/inspector/" class="md-nav__link">
+        AWS Inspector
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/key-management-service/" class="md-nav__link">
+        Key Management Service
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/cloud-hsm/" class="md-nav__link">
+        CloudHSM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/acm/" class="md-nav__link">
+        AWS Certificate Manager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/parameter-store/" class="md-nav__link">
+        AWS Parameter Store
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/secrets-manager/" class="md-nav__link">
+        AWS Secrets Manager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/vpc-flowlogs/" class="md-nav__link">
+        VPC Flow Logs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-config/waf-shield/" class="md-nav__link">
+        AWS Shield & WAF
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          DR & BC
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="DR & BC" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          DR & BC
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dr-bc/dr-bc-architecture/" class="md-nav__link">
+        DR Architecture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dr-bc/dr-storage/" class="md-nav__link">
+        DR Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dr-bc/dr-compute/" class="md-nav__link">
+        DR Compute
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dr-bc/dr-database/" class="md-nav__link">
+        DR Database
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dr-bc/dr-networking/" class="md-nav__link">
+        DR Networking
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
           Miscellaneous
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Miscellaneous" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
           Miscellaneous
         </label>
@@ -571,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/lex-connect/" class="md-nav__link">
+      <a href="../../miscellaneous/lex-connect/" class="md-nav__link">
         AWS Lex & Connect
       </a>
     </li>
@@ -585,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/rekognition/" class="md-nav__link">
+      <a href="../../miscellaneous/rekognition/" class="md-nav__link">
         AWS Rekognition
       </a>
     </li>
@@ -599,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/kinesis-video-streams/" class="md-nav__link">
+      <a href="../../miscellaneous/kinesis-video-streams/" class="md-nav__link">
         Kines Video Streams
       </a>
     </li>
@@ -613,7 +940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/glue/" class="md-nav__link">
+      <a href="../../miscellaneous/glue/" class="md-nav__link">
         AWS Glue
       </a>
     </li>
@@ -627,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/device-farm/" class="md-nav__link">
+      <a href="../../miscellaneous/device-farm/" class="md-nav__link">
         AWS Device Farm
       </a>
     </li>
@@ -666,16 +993,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#limitations-of-lambda" class="md-nav__link">
-    Limitations of lambda
+  <a href="#simple-workflow-service-swf" class="md-nav__link">
+    Simple Workflow Service - SWF
+  </a>
+  
+    <nav class="md-nav" aria-label="Simple Workflow Service - SWF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#state-machines" class="md-nav__link">
-    State Machines
+        
+          <li class="md-nav__item">
+  <a href="#swf-vs-step-functions" class="md-nav__link">
+    SWF vs step-functions
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -692,27 +1032,35 @@
               
                 
 
-  <h1>Step functions</h1>
+  <h1>Simple workflow service</h1>
 
-<p>AWS Step Functions - Long running serverless workflows</p>
-<h4 id="limitations-of-lambda">Limitations of lambda</h4>
+<h3 id="simple-workflow-service-swf">Simple Workflow Service - SWF</h3>
+<h4 id="overview">Overview</h4>
 <ul>
-<li>lambda -&gt; FAAS</li>
-<li>15 min - max execution time </li>
-<li>functions can be chained together. (scaling is tedious and difficult to maintain)</li>
-<li>runtime environments are stateless</li>
+<li>Build workflows - cordination over distributed components</li>
+<li>Predecessor to Step Functions - uses Instances/Servers</li>
+<li>Same patterns/anti-patterns - long running <code>workflows</code></li>
+<li>Activity Task and Activity Worker</li>
+<li>Decider<ul>
+<li>schedule task</li>
+<li>provides inputs to activity worker</li>
+<li>process events while workflow is in progress</li>
+<li>ends the workflow when objective has been completed</li>
 </ul>
-<h4 id="state-machines">State Machines</h4>
+</li>
+<li>1 years of maximum runtime</li>
+</ul>
+<h4 id="swf-vs-step-functions">SWF vs step-functions</h4>
 <ul>
-<li>Serverless workflow ... START -&gt; STATES -&gt; END</li>
-<li>States are THINGS which occur</li>
-<li>Maximum duration - 1 year</li>
-<li>Standard Workflow &amp; Express Workflow</li>
-<li>Started via API gateway, IOT rules, EventBridge, Lambda ...</li>
-<li>Amazon State Language (ASL) - JSON Template</li>
-<li>IAM Role is used for permissios</li>
+<li>Default - Step Functions - serverless/lower admin</li>
+<li>AWS Flow Framework --&gt; SWF</li>
+<li>External Signals to intervene in process -&gt; SWF</li>
+<li>Launch child flows - return to parent -&gt; SWF</li>
+<li>Bespoke/complex decisions -&gt; SWF (customer decider applications)</li>
+<li>Mechanical Turk -&gt; SWF (suggested AWS architecture)</li>
+<li>Over time Step Functions will replace SWF</li>
 </ul>
-<p><img alt="stages" src="../step-functions-stages.png" /></p>
+<p><img alt="SWF" src="../simple-workflow-service.png" /></p>
 
               
             </article>
@@ -743,10 +1091,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.01824240.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.01824240.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.a87c2adc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a87c2adc.min.js"></script>
       
     
   </body>
