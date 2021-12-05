@@ -1,9 +1,9 @@
-### CloudFront
+### Overview
 CloudFront is a Content Delivery network (CDN) within AWS.
 - higher latencies and slow transfer speeds (customers across the globe)
 - solve by using caching and efficient global network
 
-#### Terms
+### Terms
 - **Origin** - S3 origin or custom origin (publicly routable IP address)
 - **Distribution** - configuration unit of CloudFront
     - can have multiple origins configured
@@ -13,11 +13,13 @@ CloudFront is a Content Delivery network (CDN) within AWS.
     - only used by custom origin **NOT** S3 origin
     - larger version of edge location. Provides another 
     - provides another layer of caching
----
+
+</br>
+
 ![cloud-front](cloud-front.png)
 
 
-#### Cache Behavior
+### Cache Behavior
 - Default (*) - **path-pattern**
 - trusted signers/groups for private
 
@@ -27,7 +29,7 @@ To delete all cache behaviors in an existing distribution, update the distributi
 
 https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.html
 
-#### TTL
+### TTL
 - more frquent cache HITS == lower orign load
 - Default TTL (defined in the behavior) == 24 hrs (validity period)
 - **Minimum TTL** and **Maximum TTL** - default applies if not specified
@@ -37,7 +39,7 @@ https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.htm
 - Origin Header: **Expires** (Date & Time)
 - Headers can be set using custom origin or s3 origin (via object metadata)
 
-#### Invalidations (cache)
+### Invalidations (cache)
 - Cache invalidation - performed on a distribution
     - applies to all edge locations - process takes time
 - Examples of cache invalidations - correct errors
@@ -50,7 +52,7 @@ https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.htm
     - logging is more clear
     - no frequent cached invalidations
 
-#### SSL
+### SSL
 - CloudFront **Default Domain Name** (CNAME)
     - ex - https://random.cloudfront.net/
 - SSL supported by default ... ***.clodufront.net** cert
@@ -63,15 +65,16 @@ https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.htm
     - both need valid public certificates (intermediate certs)
 
 
-#### SNI - Server Name Indication
+### SNI - Server Name Indication
 - SNI is a TLS extension, allowing a **host to be included** -- free of cost
     - host header routing ->> allows multiple hosts/certs behind a single IP 
     - old browsers don't support SNI .. CF charges extra for dedicated IP ($600)
 
----
+</br>
+
 ![cloudfront-ssl-sni](cloudfront-ssl-sni.png)
 
-#### Origin Types an Architecture
+### Origin Types an Architecture
 - Origins
     - aws s3 
     - aws media package channel endpoints
@@ -86,7 +89,7 @@ https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.htm
     - custom headers
     - connection configuration
 
-#### Caching Peformance & Optimization
+### Caching Peformance & Optimization
 - **CACHE HIT** = object returned from cache
 - **CACHE MISS** = object returned from origin 
 - Headers, Cookies and Query String Parameters can be configured to be forwarded to the origin or not
@@ -94,20 +97,20 @@ https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.htm
 - **Cache based** on what can **change the objects**
 - The **more** things are involved in caching - the **less efficient**
 
-####  Origin Access Identity (OAI) - S3 Origin
-- applicable to S3
+###  Origin Access Identity (OAI) - S3 Origin
+- Onlyapplicable to S3
 - type of identity
 - assocaited with **Cloudfont Distribution**
 - CloudFront 'becomes' that **OAI**
 - **OAI** can be used in the **s3 bucket policies**
     - <span style="color:red">DENY</span> all but <span style="color:green">ALLOW</span> one or more **OAI's** in bucket policy
 
-#### Securing Custom origins
+### Securing Custom origins
 - custom origin to require some **custom headers **
     - **custom headers** are injected within the **cloudfront**
 - custom origin to host behind **firewall** which allows only **public IP ranges of cloudfront **
 
-#### Private Distributions
+### Private Distributions
 - Public - open access to objects
 - Private ... requests required signed Cookie or URL
 - 1 behavior --> whole distribution <span style="color:green">PUBLIC</span> or <span style="color:red">PRIVATE</span>
@@ -123,10 +126,12 @@ https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.htm
 - **Signed Cookies**
     - Use for **groups** of files/**all files of a type** - .jpeg
     - maintain the URL with signed cookies
----
+
+</br>
+
 ![cloudfront-private](cloudfront-private.png)
 
-#### CloudFront Geo Restriction
+### CloudFront Geo Restriction
 
 |CF Geo REstriction| 3rd party Geolocation|
 |--|---|
@@ -135,14 +140,14 @@ https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.htm
 | applies to the entire distribution | |
 | ![cloudfront-georestriction](cloudfront-georestriction.png) | ![cloudfront-3rd-party](cloudfront-3rd-party.png) |
 
-#### CloudFront Field-Level Encryption
+### CloudFront Field-Level Encryption
 - Client <==> Origin can be encrypted using HTTPS
     - data transmitted within is treated like any other plain data
 - Field Level encryption happens at the edge
     - happens separately from the **HTTPS Tunnel** using public/private key
     - private key is needed to decrypt individual fields
 
-#### Lambda@Edge
+### Lambda@Edge
 - run lightweight lambda at edge locations
 - adjust data between the viewer and origin
 - only supports node.js and python
@@ -156,7 +161,7 @@ https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CacheBehavior.htm
     - Different Objects based on Device - **Origin Request**
     - Content By Country - **Origin Request**
 
-#### ElasticCache
+### ElasticCache
 - in-memory database .. high performance
     - managed redis and memcached -- as a service
 - can be used to **cache data** - for READ HEAVY workloads with low latency requirements

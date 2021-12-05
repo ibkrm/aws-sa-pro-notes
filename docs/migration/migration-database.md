@@ -34,4 +34,4 @@ AWS Database Migration Service (AWS DMS) is a cloud service that makes it easy t
     **1.** Use SCT to extract data locally and move to a snowball device (generic fie format)
     **2.** Ship the device back to AWS.They load onto an S3 bucket.
     **3.** DMS migrates from S3 into the target store
-    **4.** CDC can capture data changes -> s3 (intermediary) -> write to target DB
+    **4.** CDC can capture data changes -> s3 (intermediary) -> write to target DB      

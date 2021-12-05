@@ -10,7 +10,7 @@
 - <span style="color:red;font-weight:bold">Databases OUTSIDE of Elastic BeanStalk   </span>
  - <span style="color:red;font-weight:bold">DB in env are lost if env is deleted</span> 
 
- ### EB - Platforms
+### EB - Platforms
 - **Built-in languages**
     - Go, java, java + tomcat, .NET Core(linux) & .NET (Windows)
     - nodejs, python, pho, ruby

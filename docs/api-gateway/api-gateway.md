@@ -1,5 +1,4 @@
-
-# API Gateway
+### Overview
 - create and manage APIs
 - highly available and scalable
 - handles authorization, throttling, caching, CORS, transformations, OpenAPI spec
@@ -7,7 +6,7 @@
 - public services - both on-premise and AWS
 - HTTP APIs, REST APIs and Websocket APIs
 
-### Overview
+</br>
 
 ![alt overview](api-gateway-overview.png)
 

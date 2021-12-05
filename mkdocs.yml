@@ -1,24 +1,47 @@
 site_name: AWS SA Professional
 theme:
   name: material
+  font:
+    text: Open Sans
   palette:
     - media: "(prefers-color-scheme: light)"  # Light mode
       scheme: default
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/toggle-switch
         name: Switch to light mode
     - media: "(prefers-color-scheme: dark)"  # Dark mode
       scheme: slate
       primary: light blue
       accent: indigo
       toggle:
-        icon: material/lightbulb
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
 
 nav:
+  - Accounts and Permissions:
+    - AWS STS: permission-and-accounts/security-token-service.md
+    - AWS Organizations: permission-and-accounts/aws-organizations.md
+    - AWS Resource Access Manager: permission-and-accounts/resource-access-manager.md
   - API Gateway: api-gateway/api-gateway.md
+  - CloudFront: cloudfront/cloudfront.md
+  
+  - Serverless:
+    - Step Functions: serverless/step-functions.md
+    - AWS SAM: serverless/serverless-application-model.md
+  - Deployment:
+    - CICD: deployment/ci-cd.md
+    - Elastic BeanStalk: deployment/elastic-beanstalk.md
+    - AWS Opsworks: deployment/opsworks.md
+    - AWS Service Catalog: deployment/service-catalog.md
+    - AWS Systems Manager: deployment/systems-manager.md
   - Migration:
     - 6R migration: migration/migration.md
+    - Database Migration: migration/migration-database.md
+    - Virtual Machinne Migration: migration/migration-virtual-machines.md
+    - Storage Gateway: migration/storage-gateway.md
+    - AWS Snowball: migration/snowball.md
+    - AWS Datasync: migration/datasync.md
+    
   - Security & Configuration:
     - AWS Guard Duty: security-config/guardduty.md
     - AWS Config: security-config/config.md
@@ -42,3 +65,15 @@ nav:
     - Kines Video Streams: miscellaneous/kinesis-video-streams.md
     - AWS Glue: miscellaneous/glue.md
     - AWS Device Farm: miscellaneous/device-farm.md
+
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

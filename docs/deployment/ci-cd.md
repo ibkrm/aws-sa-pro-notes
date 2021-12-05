@@ -1,5 +1,3 @@
-# CICD  
-**Continuous Integration and Continuous Delivery**
 ### AWS CodeCommit
 - similar to gihub
 - authentication - iam user 
