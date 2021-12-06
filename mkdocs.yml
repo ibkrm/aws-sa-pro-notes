@@ -21,6 +21,8 @@ nav:
   - Accounts and Permissions:
     - AWS STS: permission-and-accounts/security-token-service.md
     - AWS Organizations: permission-and-accounts/aws-organizations.md
+    - Policy Interpretation: permission-and-accounts/policy-interpretation.md
+    - Permission Boundaries: permission-and-accounts/permission-boundaries.md
     - AWS Resource Access Manager: permission-and-accounts/resource-access-manager.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md

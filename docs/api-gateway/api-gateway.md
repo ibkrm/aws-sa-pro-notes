@@ -1,10 +1,12 @@
 ### Overview
-- create and manage APIs
-- highly available and scalable
-- handles authorization, throttling, caching, CORS, transformations, OpenAPI spec
-- direct integrations with AWS services (dynamo, step-functions, SNS)
-- public services - both on-premise and AWS
-- HTTP APIs, REST APIs and Websocket APIs
+A fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale
+
+- Create and Manaage API
+- Highly Available and Scalable
+- <span style="color:orange;font-weight:bold">Handles authorization, throttling, caching, CORS, transformations, OpenAPI spec</span>
+- Direct integrations with AWS services **(dynamo, step-functions, SNS, lambda)**
+- Public services - **both on-premise and AWS**
+- Supports creating **HTTP APIs, REST APIs and Websocket APIs**
 
 </br>
 
@@ -27,12 +29,13 @@
 ![alt stages](api-gateway-stages.png)
 
 ### Error Codes
-- 4XX - Client Error - Invalid request on client side
-- 5XX - Server Error - Valid request, backend issue
-- API Gateway Timeout Limit - 29s
+- **4XX - Client Error** - Invalid request on client side
+- **5XX - Server Error** - Valid request, backend issue
+- **API Gateway Timeout L imit** - 29s
+
 
 | HTTP Status Code | Error code | Retry |
-| ---: | ---- | --- 
+| :--- | :----: | ---: |
 400 |	Bad Request Exception (generic) |	No |
 403	| Access Denied Exception	| No |
 404	| Not Found Exception	| No |
@@ -90,4 +93,4 @@ Caching is done per stage.
 - Endpoints (`/listcats`) and Operations (`GET /listcats`)
 - input and output parameters & Authentication methods
 - non tech information - contact info, licencse, terms of use...
- > Import existing OpenAPI spec + update permissions on resource policy for lambda 
+ > Import existing OpenAPI spec + update permissions on resource policy for lambda

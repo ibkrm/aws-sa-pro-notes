@@ -33,3 +33,8 @@
 - From the **Management Account** invite other existing **standard** accounts
     - existing **standard** accounts will need to approve the invite to join the organization
     - once approved standard accounts become **member** accounts of the organization
+
+### Role to switch bewtween acounts
+- General account to switch to many other different accoutns
+- Role with trust from accountID (General account)
+- Role with adminstrative policy
