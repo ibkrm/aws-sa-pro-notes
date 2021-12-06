@@ -258,6 +258,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../permission-and-accounts/policy-interpretation/" class="md-nav__link">
+        Policy Interpretation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../permission-and-accounts/permission-boundaries/" class="md-nav__link">
+        Permission Boundaries
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../permission-and-accounts/resource-access-manager/" class="md-nav__link">
         AWS Resource Access Manager
       </a>
@@ -1178,13 +1206,14 @@
   <h1>API Gateway</h1>
 
 <h3 id="overview">Overview</h3>
+<p>A fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale</p>
 <ul>
-<li>create and manage APIs</li>
-<li>highly available and scalable</li>
-<li>handles authorization, throttling, caching, CORS, transformations, OpenAPI spec</li>
-<li>direct integrations with AWS services (dynamo, step-functions, SNS)</li>
-<li>public services - both on-premise and AWS</li>
-<li>HTTP APIs, REST APIs and Websocket APIs</li>
+<li>Create and Manaage API</li>
+<li>Highly Available and Scalable</li>
+<li><span style="color:orange;font-weight:bold">Handles authorization, throttling, caching, CORS, transformations, OpenAPI spec</span></li>
+<li>Direct integrations with AWS services <strong>(dynamo, step-functions, SNS, lambda)</strong></li>
+<li>Public services - <strong>both on-premise and AWS</strong></li>
+<li>Supports creating <strong>HTTP APIs, REST APIs and Websocket APIs</strong></li>
 </ul>
 <p></br></p>
 <p><img alt="alt overview" src="../api-gateway-overview.png" /></p>
@@ -1209,63 +1238,63 @@
 <p><img alt="alt stages" src="../api-gateway-stages.png" /></p>
 <h3 id="error-codes">Error Codes</h3>
 <ul>
-<li>4XX - Client Error - Invalid request on client side</li>
-<li>5XX - Server Error - Valid request, backend issue</li>
-<li>API Gateway Timeout Limit - 29s</li>
+<li><strong>4XX - Client Error</strong> - Invalid request on client side</li>
+<li><strong>5XX - Server Error</strong> - Valid request, backend issue</li>
+<li><strong>API Gateway Timeout L imit</strong> - 29s</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th align="right">HTTP Status Code</th>
-<th>Error code</th>
-<th>Retry</th>
+<th align="left">HTTP Status Code</th>
+<th align="center">Error code</th>
+<th align="right">Retry</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="right">400</td>
-<td>Bad Request Exception (generic)</td>
-<td>No</td>
+<td align="left">400</td>
+<td align="center">Bad Request Exception (generic)</td>
+<td align="right">No</td>
 </tr>
 <tr>
-<td align="right">403</td>
-<td>Access Denied Exception</td>
-<td>No</td>
+<td align="left">403</td>
+<td align="center">Access Denied Exception</td>
+<td align="right">No</td>
 </tr>
 <tr>
-<td align="right">404</td>
-<td>Not Found Exception</td>
-<td>No</td>
+<td align="left">404</td>
+<td align="center">Not Found Exception</td>
+<td align="right">No</td>
 </tr>
 <tr>
-<td align="right">409</td>
-<td>Conflict Exception</td>
-<td>No</td>
+<td align="left">409</td>
+<td align="center">Conflict Exception</td>
+<td align="right">No</td>
 </tr>
 <tr>
-<td align="right">429</td>
-<td>Limit Exceeded Exception</td>
-<td>No</td>
+<td align="left">429</td>
+<td align="center">Limit Exceeded Exception</td>
+<td align="right">No</td>
 </tr>
 <tr>
-<td align="right">429</td>
-<td>Too Many Requests Exception</td>
-<td>Yes</td>
+<td align="left">429</td>
+<td align="center">Too Many Requests Exception</td>
+<td align="right">Yes</td>
 </tr>
 <tr>
-<td align="right">502</td>
-<td>Bad Gateway Exception, usually for an incompatible output returned from a Lambda proxy integration backend and occasionally for out-of-order invocations due to heavy loads.</td>
-<td>Yes if idempotent</td>
+<td align="left">502</td>
+<td align="center">Bad Gateway Exception, usually for an incompatible output returned from a Lambda proxy integration backend and occasionally for out-of-order invocations due to heavy loads.</td>
+<td align="right">Yes if idempotent</td>
 </tr>
 <tr>
-<td align="right">503</td>
-<td>Service Unavailable Exception</td>
-<td>Yes</td>
+<td align="left">503</td>
+<td align="center">Service Unavailable Exception</td>
+<td align="right">Yes</td>
 </tr>
 <tr>
-<td align="right">504</td>
-<td>Endpoint Request Timed-out Exception</td>
-<td>Yes if idempotent</td>
+<td align="left">504</td>
+<td align="center">Endpoint Request Timed-out Exception</td>
+<td align="right">Yes if idempotent</td>
 </tr>
 </tbody>
 </table>
@@ -1318,7 +1347,7 @@
 <li>Endpoints (<code>/listcats</code>) and Operations (<code>GET /listcats</code>)</li>
 <li>input and output parameters &amp; Authentication methods</li>
 <li>non tech information - contact info, licencse, terms of use...<blockquote>
-<p>Import existing OpenAPI spec + update permissions on resource policy for lambda </p>
+<p>Import existing OpenAPI spec + update permissions on resource policy for lambda</p>
 </blockquote>
 </li>
 </ul>
