@@ -23,7 +23,15 @@ nav:
     - AWS Organizations: permission-and-accounts/aws-organizations.md
     - Policy Interpretation: permission-and-accounts/policy-interpretation.md
     - Permission Boundaries: permission-and-accounts/permission-boundaries.md
+    - Permissions Evaluation : permission-and-accounts/permissions-evaluation.md
     - AWS Resource Access Manager: permission-and-accounts/resource-access-manager.md
+    - Service Quotas: permission-and-accounts/service-quotas.md
+  - Networking and Hybrid:
+    - Public vs Private Services: networking-and-hybrid/public-private-services.md
+    - DHCP: networking-and-hybrid/dhcp.md
+    - VPC Router: networking-and-hybrid/vpc-router.md
+    - Stateful vs Stateless: networking-and-hybrid/stateless-vs-stateful.md
+    - Border Gateway Protocol: networking-and-hybrid/border-gateway-protocol.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   

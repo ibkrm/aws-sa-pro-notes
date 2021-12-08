@@ -6,9 +6,9 @@
 - KMS can use **CloudHSM** as a **custom key store**, CloudHSM integration with KMS (newer feature)
 
 |CloudHSM| KMS|
-|---|---|
+|:---:|:---:|
 | FIPS 140-2 level3 | FIPS 140-2 level 2 (some L3) |
-| Industry Standard API - **PKCS#11**,Java Cryptography Extenstion (**JCE**), Microsoft **CryptoNG** (CNG) libraries | Communicated via AWS API|
+| Industry Standard API - </br> **PKCS#11**,Java Cryptography Extenstion (**JCE**), Microsoft **CryptoNG** (CNG) libraries | Communicated via AWS API|
 
 - Configure HSM in cluster mode to ensure HA mode (multi AZ). By default, it does not run on HA mode.
 
