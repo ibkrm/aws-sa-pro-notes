@@ -26,12 +26,18 @@ nav:
     - Permissions Evaluation : permission-and-accounts/permissions-evaluation.md
     - AWS Resource Access Manager: permission-and-accounts/resource-access-manager.md
     - Service Quotas: permission-and-accounts/service-quotas.md
+
   - Networking and Hybrid:
     - Public vs Private Services: networking-and-hybrid/public-private-services.md
     - DHCP: networking-and-hybrid/dhcp.md
     - VPC Router: networking-and-hybrid/vpc-router.md
     - Stateful vs Stateless: networking-and-hybrid/stateless-vs-stateful.md
     - Border Gateway Protocol: networking-and-hybrid/border-gateway-protocol.md
+    - Global Accelerator: networking-and-hybrid/global-accelerator.md
+    - IPSec VPN: networking-and-hybrid/ipsec-vpn.md
+    - Site-to-Site VPN: networking-and-hybrid/site-to-site-vpn.md
+    - Transit Gateway: networking-and-hybrid/transit-gateway.md
+
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   
@@ -44,6 +50,7 @@ nav:
     - AWS Opsworks: deployment/opsworks.md
     - AWS Service Catalog: deployment/service-catalog.md
     - AWS Systems Manager: deployment/systems-manager.md
+
   - Migration:
     - 6R migration: migration/migration.md
     - Database Migration: migration/migration-database.md
@@ -63,12 +70,14 @@ nav:
     - AWS Secrets Manager: security-config/secrets-manager.md
     - VPC Flow Logs: security-config/vpc-flowlogs.md
     - AWS Shield & WAF: security-config/waf-shield.md
+
   - DR & BC:
     - DR Architecture: dr-bc/dr-bc-architecture.md
     - DR Storage: dr-bc/dr-storage.md
     - DR Compute: dr-bc/dr-compute.md
     - DR Database: dr-bc/dr-database.md
     - DR Networking: dr-bc/dr-networking.md
+    
   - Miscellaneous:
     - AWS Lex & Connect: miscellaneous/lex-connect.md
     - AWS Rekognition: miscellaneous/rekognition.md

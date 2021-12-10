@@ -17,3 +17,11 @@
 - Lots of organisation / RAM questions/ cross region services and a question on GWLB.
 ### whitepapers
 AWS Organizations User Guide, Building a Scalable and Secure Multi-VPC AWS Network Infrastructure Whitepaper, and Serverless Architectures with AWS Lambda Whitepaper.
+
+- , lots and lots of questions about DX so make sure you have that down
+- 3 questions about RDS proxy as well, so worth having a look at that.
+-  AWS Wavelength was a distractor used in two questions, and ground station was used to distract from a simple data migration job from a site to S3
+- one question about Fully Managed Apache Kafka (MSK) -- HA or fault tolerant ???
+- I recall one question on AWS Control Tower
+- one question where 2 options were to send the notification by SNS vs 2 options by SES
+- question where 2 options were with “s3 sync” and 2 options with Datasync agent.
