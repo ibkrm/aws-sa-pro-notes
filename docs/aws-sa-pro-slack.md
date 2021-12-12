@@ -15,8 +15,6 @@
 - another very similar answer included backup which would allow recovery from corruptions.
 - AWS Organizations (easily 5-10), networking (VPN, Direct Connect, DC & Transit Gateway, VPC Peering), Aurora vs RDS and DynamoDB, S3 access logs, CF Stack Sets, Storage Gateway, Resource Sharing, Transfer Family
 - Lots of organisation / RAM questions/ cross region services and a question on GWLB.
-### whitepapers
-AWS Organizations User Guide, Building a Scalable and Secure Multi-VPC AWS Network Infrastructure Whitepaper, and Serverless Architectures with AWS Lambda Whitepaper.
 
 - , lots and lots of questions about DX so make sure you have that down
 - 3 questions about RDS proxy as well, so worth having a look at that.
@@ -25,3 +23,9 @@ AWS Organizations User Guide, Building a Scalable and Secure Multi-VPC AWS Netwo
 - I recall one question on AWS Control Tower
 - one question where 2 options were to send the notification by SNS vs 2 options by SES
 - question where 2 options were with “s3 sync” and 2 options with Datasync agent.
+
+-  Direct Connect, SAML, Disaster Recovery (RTO/RPO) best options, Hybrid Cloud, AWS Organization, RDS Connection Pool (RDS Proxy), Secret Management, DDoS and Web Protection, Client VPN, Route53 Resolver Endpoints, and one Question on Workspace
+
+### whitepapers
+AWS Organizations User Guide, Building a Scalable and Secure Multi-VPC AWS Network Infrastructure Whitepaper, and Serverless Architectures with AWS Lambda Whitepaper.
+

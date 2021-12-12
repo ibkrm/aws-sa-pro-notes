@@ -31,12 +31,16 @@ nav:
     - Public vs Private Services: networking-and-hybrid/public-private-services.md
     - DHCP: networking-and-hybrid/dhcp.md
     - VPC Router: networking-and-hybrid/vpc-router.md
+    - VPC Routing: networking-and-hybrid/vpc-routing.md
     - Stateful vs Stateless: networking-and-hybrid/stateless-vs-stateful.md
     - Border Gateway Protocol: networking-and-hybrid/border-gateway-protocol.md
     - Global Accelerator: networking-and-hybrid/global-accelerator.md
+    - Transit Gateway: networking-and-hybrid/transit-gateway.md
     - IPSec VPN: networking-and-hybrid/ipsec-vpn.md
     - Site-to-Site VPN: networking-and-hybrid/site-to-site-vpn.md
-    - Transit Gateway: networking-and-hybrid/transit-gateway.md
+    - Accelerated Site-to-Site VPN: networking-and-hybrid/site-to-site-accelerated.md 
+    - AWS Client VPN: networking-and-hybrid/aws-client-vpn.md
+    - Direct Connect: networking-and-hybrid/direct-connect.md
 
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md

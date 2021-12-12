@@ -4,7 +4,7 @@
 - IAM permission boundaries does not affect **RESOURCE POLICIES** (only **IDENTITY POLICY**)
 - Permission boundaries don't GRANT any access but define maximum **permissions** an  **identity** can receive
  
-
+> SCP only applies to identities in the account
 ### Use Cases
 - **Delegation Problems - IAM administrator permissions**
     - apply permission boundary policy for user 
