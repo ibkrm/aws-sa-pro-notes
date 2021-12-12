@@ -450,6 +450,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../vpc-routing/" class="md-nav__link">
+        VPC Routing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../stateless-vs-stateful/" class="md-nav__link">
         Stateful vs Stateless
       </a>
@@ -492,6 +506,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../transit-gateway/" class="md-nav__link">
+        Transit Gateway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ipsec-vpn/" class="md-nav__link">
         IPSec VPN
       </a>
@@ -520,8 +548,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../transit-gateway/" class="md-nav__link">
-        Transit Gateway
+      <a href="../site-to-site-accelerated/" class="md-nav__link">
+        Accelerated Site-to-Site VPN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-client-vpn/" class="md-nav__link">
+        AWS Client VPN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../direct-connect/" class="md-nav__link">
+        Direct Connect
       </a>
     </li>
   
@@ -1299,7 +1355,8 @@
 <p><img alt="vpc-router" src="../vpc-router.png" /></p>
 <h3 id="route-tables">Route tables</h3>
 <ul>
-<li>Every <strong>VPC</strong> is created with a <strong>Maing route table</strong> (RT)<ul>
+<li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html">Route tables for your VPC</a></li>
+<li>Every <strong>VPC</strong> is created with a <strong>Main route table</strong> (RT)<ul>
 <li>also defaults for <strong>every subnet</strong> in the VPC</li>
 </ul>
 </li>
@@ -1312,10 +1369,43 @@
 </ul>
 </li>
 <li>
-<p>Route tables contain <strong>routes</strong> - <strong>most specific</strong> routes <strong>first</strong></p>
-</li>
-<li>RT's <strong>can be associated with gateways</strong></li>
+<p>Route tables contain <strong>routes</strong> </p>
+<ul>
+<li><strong>most specific</strong> routes <strong>first</strong></li>
+<li><strong>static routes</strong> are added and update manually</li>
+<li>if <strong>route propagation</strong> is enabled, routes are automatically added called <strong>propagated routes</strong></li>
+<li><img alt="🔴" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f534.svg" title=":red_circle:" /> <strong>Limitation</strong> <img alt="🔴" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f534.svg" title=":red_circle:" /> = <strong>50 static routes</strong> and <strong>100 dynamic/propagated routes</strong></li>
 </ul>
+<table>
+<thead>
+<tr>
+<th align="left">Priority</th>
+<th align="left">Route Type/Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>1</strong></td>
+<td align="left"><strong>Longest Prefix</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>2</strong></td>
+<td align="left">Static Routes</td>
+</tr>
+<tr>
+<td align="left"><strong>3</strong></td>
+<td align="left">Propagated Routes <ol><li><strong>DX</strong></li><li><strong>VPN Static</strong></li><li><strong>VPN BGP</strong></li><li><strong>AS_PATH</strong></li></ol></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>RT's <strong>can be associated with gateways- IGW or VGW</strong></p>
+</li>
+<li><strong>IPv4</strong> and <strong>IPv6</strong> are handled seperatly within a RT</li>
+<li>Routes send traffic based on <strong>destination</strong> to a <strong>target</strong></li>
+</ul>
+<p></br><img alt="vpc-routing" src="../vpc-routing.png" /></p>
 
               
             </article>
@@ -1345,13 +1435,13 @@
       
       
         
-        <a href="../stateless-vs-stateful/" class="md-footer__link md-footer__link--next" aria-label="Next: Stateful vs Stateless" rel="next">
+        <a href="../vpc-routing/" class="md-footer__link md-footer__link--next" aria-label="Next: VPC Routing" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Stateful vs Stateless
+              VPC Routing
             </div>
           </div>
           <div class="md-footer__button md-icon">
