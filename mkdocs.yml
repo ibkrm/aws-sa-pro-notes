@@ -2,7 +2,7 @@ site_name: AWS SA Professional
 theme:
   name: material
   font:
-    text: Open Sans
+    text: Helvetica
   palette:
     - media: "(prefers-color-scheme: light)"  # Light mode
       scheme: default
@@ -40,8 +40,12 @@ nav:
     - Site-to-Site VPN: networking-and-hybrid/site-to-site-vpn.md
     - Accelerated Site-to-Site VPN: networking-and-hybrid/site-to-site-accelerated.md 
     - AWS Client VPN: networking-and-hybrid/aws-client-vpn.md
-    - Direct Connect: networking-and-hybrid/direct-connect.md
-
+    - Direct Connect: 
+      - Direct Connect: networking-and-hybrid/direct-connect/direct-connect.md
+    - Route 53: 
+      - DNS: networking-and-hybrid/route53/dns.md
+      - Fundamentals: networking-and-hybrid/route53/fundamentals.md
+      - Hosted Zones: networking-and-hybrid/route53/hosted-zones.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   
