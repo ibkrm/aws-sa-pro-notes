@@ -46,6 +46,7 @@ nav:
       - DNS: networking-and-hybrid/route53/dns.md
       - Fundamentals: networking-and-hybrid/route53/fundamentals.md
       - Hosted Zones: networking-and-hybrid/route53/hosted-zones.md
+      - Routing Policies: networking-and-hybrid/route53/routing-policies.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   
