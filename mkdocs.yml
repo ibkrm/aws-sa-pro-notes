@@ -47,6 +47,11 @@ nav:
       - Fundamentals: networking-and-hybrid/route53/fundamentals.md
       - Hosted Zones: networking-and-hybrid/route53/hosted-zones.md
       - Routing Policies: networking-and-hybrid/route53/routing-policies.md
+    - AWS PrivateLink: networking-and-hybrid/private-link.md
+    - VPC Endpoints: networking-and-hybrid/vpc-endpoints.md
+    - VPC DNS and DNS Endpoints: networking-and-hybrid/vpc-dns-endpoints.md
+    - VPC IPv6: networking-and-hybrid/vpc-dns-endpoints.md
+    - VPC Structure: networking-and-hybrid/vpc-structure.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   

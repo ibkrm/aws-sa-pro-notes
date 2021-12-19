@@ -34,7 +34,7 @@
         - **CreationPolicy** or **WaitCondition**
     - **CreationPolicy**
 - **nested stacks**
-  - overcome the **500 Resource Limi** of one stack
+  - overcome the **500 Resource Limit** of one stack
   - **modular templates** ... **code reuse**
   - make the installation process easier
     - ..nested stack created by the root stack
