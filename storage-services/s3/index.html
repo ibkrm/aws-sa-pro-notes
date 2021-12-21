@@ -742,14 +742,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -784,61 +782,128 @@
               
   
   
+  
     
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
           S3
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        S3
+      <nav class="md-nav" aria-label="S3" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          S3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="storage-classes/" class="md-nav__link">
+        Storage Classes
       </a>
-      
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+            
+          
+            
+              
   
   
   
+    <li class="md-nav__item">
+      <a href="lifecycle-configuration/" class="md-nav__link">
+        Lifecycle Configuration
+      </a>
+    </li>
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#storage-object-classes" class="md-nav__link">
-    Storage Object Classes
-  </a>
+
+            
+          
+            
+              
   
-    <nav class="md-nav" aria-label="Storage Object Classes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comparing-the-amazon-s3-storage-classes" class="md-nav__link">
-    Comparing the Amazon S3 storage classes
-  </a>
   
-</li>
-        
-      </ul>
-    </nav>
   
-</li>
-      
-    </ul>
+    <li class="md-nav__item">
+      <a href="replication/" class="md-nav__link">
+        Replication
+      </a>
+    </li>
   
-</nav>
-      
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="encryption/" class="md-nav__link">
+        Object Encryption
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="presigned-urls/" class="md-nav__link">
+        Presigned URLs
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macie/" class="md-nav__link">
+        AWS Macie
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ebs/" class="md-nav__link">
+        EBS
+      </a>
     </li>
   
 
@@ -1590,6 +1655,55 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#s3-standard-standard-ia-s3-one-zone-ia" class="md-nav__link">
+    S3 Standard, Standard IA, S3 One Zone-IA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-glacier" class="md-nav__link">
+    S3 Glacier
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-intelligent-tiering" class="md-nav__link">
+    S3 Intelligent-Tiering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-lifecycle-configuration" class="md-nav__link">
+    S3 Lifecycle Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-replication" class="md-nav__link">
+    S3 Replication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-object-encryption" class="md-nav__link">
+    S3 Object encryption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-presigned-urls" class="md-nav__link">
+    S3 Presigned URLs
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1708,6 +1822,141 @@
 </tr>
 </tbody>
 </table>
+<h3 id="s3-standard-standard-ia-s3-one-zone-ia">S3 Standard, Standard IA, S3 One Zone-IA</h3>
+<h3 id="s3-glacier">S3 Glacier</h3>
+<ul>
+<li>Objects <span style="color:red;font-weight:bold">cannot be made publicly accessible</span><ul>
+<li>any access of data (beyond object metadata) requires a retrieval process</li>
+</ul>
+</li>
+</ul>
+<p><img alt="glacier" src="../images/glacier.png" />
+<img alt="glacier-deep-archive" src="../images/glacier-deep-archive.png" /></p>
+<h3 id="s3-intelligent-tiering">S3 Intelligent-Tiering</h3>
+<p><img alt="intelligent-tiering" src="../images/inetlligent-tiering.png" /></p>
+<h3 id="s3-lifecycle-configuration">S3 Lifecycle Configuration</h3>
+<ul>
+<li>Set of rules on  a bucket or groups of objects<ul>
+<li>Actions - tranisition or expiration</li>
+</ul>
+</li>
+<li>Cost management to automatically move one storage class to another or expire objects when no longer needed</li>
+<li>Downward directions for transition</li>
+</ul>
+<p><strong>considerations</strong></p>
+<ul>
+<li><strong>smaller objects</strong> can <strong>cost more</strong> - minimumm size limitation</li>
+<li><strong>Minimum of 30 days</strong> in standard before transition</li>
+<li>Single rule cannot transition from <strong>Starndard-IA</strong> to <strong>S-IA,, intelligent or OneZone-IA</strong> and then to either <strong>glacier type</strong> .. within 30 days (duration minimums)
+        - Two different rules can achive this </li>
+</ul>
+<p><img alt="lifecycle-configuration" src="../images/lifecycle-configuration.png" /></p>
+<h3 id="s3-replication">S3 Replication</h3>
+<p><strong>CRR</strong> - Cross Region Replication</br></p>
+<p><strong>SRR</strong> - Same Region Replication</p>
+<ul>
+<li><strong>Replication configuration</strong> applies to <strong>source bucket</strong></li>
+<li>
+<p>IAM role is assigned for replcation - with trust to <strong>s3.amazonaws.com</strong></p>
+<ul>
+<li>permission policy to move objects in both buckets</li>
+</ul>
+</li>
+<li>
+<p>For replication between different accounts </p>
+<ul>
+<li>destination bucket should have proper bucket policy to allow IAM role in source bucket acccount to write and replicate objects</li>
+</ul>
+</li>
+<li>
+<p>Replicaiton could be applied to all objects or a subset of objects (filter with <strong>prefix and/or tags</strong>)</p>
+</li>
+<li>Storage class in destination bucket - default to same as source bucket (could be configured)</li>
+<li>Ownership of the destination objects - deafult is the soruce account (could be changed to different destination account)</li>
+<li><strong>Replication Time Control</strong> (RTC) - 15 mins ETA</li>
+<li>Only applies to the objects after the <strong>replication is enabled</strong> and <strong>VERSIONING</strong> needs to be enabled in both buckets</li>
+<li>
+<p><strong>One-way replication</strong> - from source to destination</p>
+</li>
+<li>
+<p>Handles <strong>unencrypted</strong> objects as well as objects <strong>encrypted with SSE-S3 &amp; SSE-KMS</strong>(with extra config)</p>
+</li>
+<li>Source bucket owner needs permissions to objects</li>
+<li>Does not replicate -<span style="color:red;font-weight:bold">systems events, Glacier or Glacier Deep Archive</span></li>
+<li><span style="color:red;font-weight:bold">Does not replicate DELETE</span></li>
+</ul>
+<p><strong>Why use replication .. ?</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">SRR</th>
+<th align="center">CRR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Log aggregation</td>
+<td align="center">Global Resiliency Improvements</td>
+</tr>
+<tr>
+<td align="center">Prod and Test Sync</td>
+<td align="center">Latency Reduction</td>
+</tr>
+<tr>
+<td align="center">Resilience with strict sovereignty - regional</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="s3-object-encryption">S3 Object encryption</h3>
+<p>Encryption at-rest</p>
+<table>
+<thead>
+<tr>
+<th align="center">Client-Side</th>
+<th align="center">Server-side</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Encrypted data is sent from client to S3</td>
+<td align="center">Data is only encrypted from s3 endpoint. Data is not encrypted (at-rest) before uploading to s3 endpoint</td>
+</tr>
+<tr>
+<td align="center">Key management is entirely done by customer</td>
+<td align="center">Key management is partially/entirely done by S3 (AWS)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Server-Side encryption</strong></p>
+<ul>
+<li><strong>SSE-C</strong> - customer-provided keys<ul>
+<li>customer uploads object with keys</li>
+<li>s3 encrypts and decrypts before uploading or downloading the objects</li>
+<li>
+<blockquote>
+<p>reduces the overhead of encryption and decryption on the customer side </p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><strong>SSE-S3</strong> - amazon S3-managed keys<ul>
+<li>customer uploads object </li>
+<li>S3 uses master key to create a unique Key to encrypt the object - <strong>AES256</strong></li>
+<li>S3 then encrypt the unique Key and the original unique Key is discarded</li>
+<li>both encrypted key and object is now stored in the S3</li>
+<li>customer has no control over master and encrypted keys</li>
+</ul>
+</li>
+<li><strong>SSE-KMS</strong> - customer master keys (<strong>CMKs</strong>) stored in AWS KMS service<ul>
+<li>Segregation of duties - sysops vs admin</li>
+</ul>
+</li>
+</ul>
+<p><strong>Bucket Default Encryption</strong>
+- set <code>DEFAULT=AES256</code> if <code>x-amz-server-side-encrypion</code> is not provided
+- use bucket policy to enforce object encryption for the bucket</p>
+<h3 id="s3-presigned-urls">S3 Presigned URLs</h3>
 
               
             </article>
@@ -1717,41 +1966,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../file-system/" class="md-footer__link md-footer__link--prev" aria-label="Previous: File Systems" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              File Systems
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../api-gateway/api-gateway/" class="md-footer__link md-footer__link--next" aria-label="Next: API Gateway" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              API Gateway
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
