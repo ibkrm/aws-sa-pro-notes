@@ -13,3 +13,4 @@ Amazon Mechanical Turk (MTurk) is a crowdsourcing marketplace that makes it easi
 #### Use Cases
 - MTurk can be a great way to minimize the costs and time required for each stage of ML development. It is easy to collect and annotate the massive amounts of data required for training machine learning (ML) models with MTurk.
 - Common examples include the moderation of web and social media content, categorization of products or images, and the collection of data from websites or other resources.
+

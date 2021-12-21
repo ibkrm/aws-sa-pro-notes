@@ -52,6 +52,16 @@ nav:
     - VPC DNS and DNS Endpoints: networking-and-hybrid/vpc-dns-endpoints.md
     - VPC IPv6: networking-and-hybrid/vpc-dns-endpoints.md
     - VPC Structure: networking-and-hybrid/vpc-structure.md
+  - Storage Services:
+    - File Systems: storage-services/file-system.md
+    - S3:
+      - Storage Classes: storage-services/s3/storage-classes.md
+      - Lifecycle Configuration: storage-services/s3/lifecycle-configuration.md
+      - Replication: storage-services/s3/replication.md
+      - Object Encryption: storage-services/s3/encryption.md
+      - Presigned URLs: storage-services/s3/presigned-urls.md
+    - AWS Macie: storage-services/macie.md
+    - EBS: storage-services/ebs.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   
