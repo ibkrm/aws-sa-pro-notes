@@ -62,6 +62,11 @@ nav:
       - Presigned URLs: storage-services/s3/presigned-urls.md
     - AWS Macie: storage-services/macie.md
     - EBS: storage-services/ebs.md
+  - Compute & Load Balancing:
+    - EC2: compute/ec2.md
+    - ELB: compute/elb.md
+    - ASG: compute/elb.md
+    - Connection Draining: compute/connection-draining.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   

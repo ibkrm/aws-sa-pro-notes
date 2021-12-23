@@ -137,15 +137,13 @@ The percentage in each domain represents only scored content.
 
   - Design a highly available application environment
   - Determine advanced techniques to detect for failure and service recoverability
-  - Determine processes and components to monitor and recover from regional service
-  disruptions with regional failover
+  - Determine processes and components to monitor and recover from regional service disruptions with regional failover
 
 2.3 Determine a solution design to ensure business continuity.
 
   - Architect an automated, cost-effective back-up solution that supports business continuity
   across multiple AWS Regions
-  - Determine an architecture that provides application and infrastructure availability in the event
-  of a service disruption
+  - Determine an architecture that provides application and infrastructure availability in the event of a service disruption
 
 2.4 Determine a solution design to meet performance objectives.
 
@@ -361,7 +359,8 @@ Management and governance:
 - AWS CloudTrail
 - Amazon CloudWatch
 - AWS Compute Optimizer
-- AWS Config - AWS Control Tower
+- AWS Config 
+- AWS Control Tower
 - Amazon EventBridge
 - AWS License Manager
 - AWS Organizations
@@ -378,7 +377,8 @@ Media services:
 Migration and transfer: 
 
 - AWS Database Migration Service (AWS DMS)
-- AWS DataSync - AWS Migration Hub
+- AWS DataSync 
+- AWS Migration Hub
 - AWS Server Migration Service (AWS SMS)
 - AWS Snowball
 - AWS Transfer Family
@@ -397,7 +397,8 @@ Security, identity, and compliance:
 
 - AWS Artifact 
 - AWS Certificate Manager (ACM)
-- Amazon Cognito - AWS Directory Service
+- Amazon Cognito
+- AWS Directory Service
 - Amazon GuardDuty
 - AWS Identity and Access Management (IAM)
 - Amazon Inspector
