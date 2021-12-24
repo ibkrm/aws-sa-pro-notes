@@ -67,6 +67,12 @@ nav:
     - ELB: compute/elb.md
     - ASG: compute/elb.md
     - Connection Draining: compute/connection-draining.md
+  - Monitoring and Logging:
+    - Cloudwatch: monitoring/cloudwatch.md
+    - CloudTrail: monitoring/cloudtrail.md
+    - AWS X-RAY: monitoring/x-ray.md
+    - Cost Allocation Tags: monitoring/cost-allocation-tags.md
+    - Trusted Advisor: monitoring/trusted-advisor.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   

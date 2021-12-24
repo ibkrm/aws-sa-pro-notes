@@ -1,0 +1,22 @@
+- *Account level* - no agents to install, it just works
+- **Basic Features**
+    - Cos Optimization
+    - Performance
+    - Security
+    - Fault Tolerance
+    - Service Limits
+- **7 core** checks iwht basic and devloper support plans
+- Anything beyond requires **Business or Enterprise**
+- **7 Core Checks**
+    -  **S3 Buckets** - Open Permissions 
+    -  **Security Groups** - `0.0.0.0/0` for ports
+    -  **IAM Use** - at least one IAM user
+    -  **MFA on Root Account**
+    -  **EBS Public** Snapshots
+    -  **RDS Public** Snapshots
+    -  **50 Service limit** checks
+
+- **Business and Enterprise Support** - addition to core checks **115** further checks
+    - <span style="color:orange;font-weight:bold">Access via the AWS support API</span>
+    - Allow programatic capability
+    - CloudWatch Integration 
