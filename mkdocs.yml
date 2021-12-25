@@ -73,6 +73,14 @@ nav:
     - AWS X-RAY: monitoring/x-ray.md
     - Cost Allocation Tags: monitoring/cost-allocation-tags.md
     - Trusted Advisor: monitoring/trusted-advisor.md
+  - Databases:
+    - RDS: databases/rds.md
+    - Aurora: databases/aurora.md
+    - DynamoDB: databases/dynamodb.md
+    - ElasticSearch: databases/elasticsearch.md
+    - Athena: databases/athena.md
+    - Neptune: databases/neptune.md
+    - Quantum Ledger: databases/quantum-ledger.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   

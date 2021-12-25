@@ -154,7 +154,7 @@ The percentage in each domain represents only scored content.
 2.5 Determine a deployment strategy to meet business requirements when designing and implementing a solution.
 
   - Determine resource provisioning strategy to meet business objectives
-  - Determine a migration process to change the version of a service
+  - Determine a migration process to change the version of a servicew
   - Determine services to meet deployment strategy
   - Determine patch management strategy
 
