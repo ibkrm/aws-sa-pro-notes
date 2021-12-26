@@ -81,6 +81,12 @@ nav:
     - Athena: databases/athena.md
     - Neptune: databases/neptune.md
     - Quantum Ledger: databases/quantum-ledger.md
+  - Data Analytics:
+    - Kinesis: data-analytics/kinesis.md
+    - EMR: data-analytics/emr.md
+    - RedShift: data-analytics/redshift.md
+    - AWS Batch: data-analytics/aws-batch.md
+    - AWS QuickSights: data-analytics/quicksight.md
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
   
