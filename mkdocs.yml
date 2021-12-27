@@ -87,9 +87,22 @@ nav:
     - RedShift: data-analytics/redshift.md
     - AWS Batch: data-analytics/aws-batch.md
     - AWS QuickSights: data-analytics/quicksight.md
+  - Apps and Services:
+    - ECS: app-services/ecs.md
+    - SNS: app-services/sns.md
+    - SQS: app-services/sqs.md
+    - Amazon MQ: app-services/amazon-mq.md
+    - Lambda: app-services/lambda.md
+    - EventBridge: app-services/eventbridge.md
+    - Simple Workflow Service: app-services/simple-workflow-service.md
+    - AWS Mechanical Turk: app-services/mechanical-turk.md
+    - Elastic Transcoder: app-services/media-convert.md
+    - AWS IOT: app-services/iot.md
+    - AWS Greengrass: app-services/greengrass.md
+
   - API Gateway: api-gateway/api-gateway.md
   - CloudFront: cloudfront/cloudfront.md
-  
+
   - Serverless:
     - Step Functions: serverless/step-functions.md
     - AWS SAM: serverless/serverless-application-model.md

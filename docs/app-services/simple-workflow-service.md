@@ -22,4 +22,4 @@
 - Over time Step Functions will replace SWF
 
 
-![SWF](simple-workflow-service.png)
+![SWF](./images/simple-workflow-service.png)

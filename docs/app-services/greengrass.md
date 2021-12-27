@@ -13,4 +13,4 @@ In AWS IoT Greengrass, devices securely communicate on a **local network and exc
 
 </br>
 
-![aws-greengrass](aws-greengrass.png)
+![aws-greengrass](./images/aws-greengrass.png)

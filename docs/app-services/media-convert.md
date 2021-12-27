@@ -7,7 +7,7 @@
 - MC supports EventBridge (CWEvents) for job signaling
 
 
-![media-converter](mediaconverter.png)
+![media-converter](./images/mediaconverter.png)
 
 #### When and what to use ??
 - ET is legacy, default to MC

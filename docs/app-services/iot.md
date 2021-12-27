@@ -6,4 +6,4 @@
 - Unreliable links -- device shadows
 - Rules and event-driven integration with AWS services
 
-![aws-iot](aws-iot.png)
+![aws-iot](./images/aws-iot.png)

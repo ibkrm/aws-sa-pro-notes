@@ -26,4 +26,4 @@ NO truly global compute services in AWS
 - Public lambda function
     - can be launched from any AZs
 
-- Lambda Service is impated when there is a region failure
+- Lambda Service is impacted when there is a region failure

@@ -28,6 +28,7 @@ Systems Manager **Run Command** is a foundational feature of Systems manager whi
 Systems Manager **Patch Manager** allows for the patching of **windows or linux managed instances** running in **AWS or on-premises**.
 
 **Concepts**
+
 - Patch **Baseline**
 - Patch **Groups**
 - Maintenance **Windows**
@@ -36,6 +37,7 @@ Systems Manager **Patch Manager** allows for the patching of **windows or linux 
 - **Compliance**
 
 **Patch Baseline**
+
 - Predefined Patch Baselines - Various OS (you can also create your own)
 - Linux - AWS-[**OS**]DefaultPatchBaseline, **expliitly define** patches
     - AWS-**AmazonLinux2**DefaultPatchBaseline
@@ -45,6 +47,7 @@ Systems Manager **Patch Manager** allows for the patching of **windows or linux 
 - **AWS-WindowsPredefinedPatchBaseline-OS-Applications** - +MS App Updates
 
 **Patch Manager**
+
 - hybrid activations - generates activation code and id for on-premise isntances
 - Patch Manager will pick the baseline of patch group if an insance is registered to a patch group else it will pick the default for the instance.
 
