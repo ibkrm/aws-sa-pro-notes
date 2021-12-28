@@ -41,5 +41,3 @@ AWS Site-to-Site VPN is a hardware VPN solution which creates a highly available
 - Can be used as a backup for Direct Connect(**DX**)
 - Can be used with Direct Connect(**DX**)
     - start with VPN till **DX** is approved
-
-

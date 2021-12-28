@@ -10,6 +10,7 @@
 - Retains **metadata** (e.g. **permissions/timestamps**)
 - Built in **data validation**
 
+
 #### Key Features
 - **Scalable** - 10GBps per agent (~100TB per day)
 - **Bandwidth Limiters** (avoid link saturations)

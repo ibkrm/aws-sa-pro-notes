@@ -62,3 +62,25 @@ swap environment urls
 - instance launch and termination
 
 ### Lambdas alias and weighted traffic between versions
+
+### Cannot create unectypted snapshot of encrypted DB instances and
+cannot create unencrypted replicas of encrypted DB instances
+
+### API Gateway can be regional as well edge-optimized
+caching also can be enabled to minimize load on backends/database
+
+### Cannot create snapshot of instance in one region to another directly
+instead need to copy the snapshot of instance in that region to another
+
+### AWS recommends to create IAM roles and resources in the account where 
+the respecitve task has to be executed but also **recommend that you enable AWS CloudTrail and keep relevant CloudTrail trails and logs in the management account.**
+
+### Organizations service control policies (SCPs) do not work 
+to restrict any users or roles in the management account.
+
+### AppSync - GraphQL API can fetch from multiple data soruces and 
+congnito groups can be used with resolvers to provide authorization based on identity
+
+### API Gateway with WAF web ACL to allow for IPs
+- create a usgae plan for reuqest limit and associate with the API
+- create an API key and add it to the usage plan

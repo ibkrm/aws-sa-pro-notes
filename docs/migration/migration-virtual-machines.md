@@ -17,6 +17,8 @@
 
 
 #### Server Migration Service (SMS)
+https://docs.aws.amazon.com/server-migration-service/latest/userguide/server-migration.html
+
 **AWS Server Migration Service (SMS)** is an **agentless service** which makes it easier and faster for you to migrate thousands of **on-premises workloads** to AWS. AWS SMS allows you to **automate, schedule, and track incremental replications of live server volumes**, making it easier for you to coordinate large-scale server migrations.
 - Migrate whole VM's (OS, Data, Apps .. migrated as is) 
 - Runs on **Agentless** mode - **connector** runs as VM on-premise

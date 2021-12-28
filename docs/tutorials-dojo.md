@@ -6,4 +6,3 @@
 
 - **A Direct Connect gateway** is a globally available resource to enable connections to multiple Amazon VPCs across different regions or AWS accounts
 
-- 
