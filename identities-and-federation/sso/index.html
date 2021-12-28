@@ -13,7 +13,7 @@
     
     
       
-        <title>Virtual Machinne Migration - AWS SA Professional</title>
+        <title>Sso - AWS SA Professional</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#applicaiton-discovery-service" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Virtual Machinne Migration
+              Sso
             
           </span>
         </div>
@@ -1735,14 +1735,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
       
       
       
@@ -1765,7 +1763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../migration/" class="md-nav__link">
+      <a href="../../migration/migration/" class="md-nav__link">
         6R migration
       </a>
     </li>
@@ -1779,7 +1777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../migration-database/" class="md-nav__link">
+      <a href="../../migration/migration-database/" class="md-nav__link">
         Database Migration
       </a>
     </li>
@@ -1791,55 +1789,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Virtual Machinne Migration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../migration/migration-virtual-machines/" class="md-nav__link">
         Virtual Machinne Migration
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#applicaiton-discovery-service" class="md-nav__link">
-    Applicaiton Discovery Service
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#server-migration-service-sms" class="md-nav__link">
-    Server Migration Service (SMS)
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1851,7 +1805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage-gateway/" class="md-nav__link">
+      <a href="../../migration/storage-gateway/" class="md-nav__link">
         Storage Gateway
       </a>
     </li>
@@ -1865,7 +1819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../snowball/" class="md-nav__link">
+      <a href="../../migration/snowball/" class="md-nav__link">
         AWS Snowball
       </a>
     </li>
@@ -1879,7 +1833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasync/" class="md-nav__link">
+      <a href="../../migration/datasync/" class="md-nav__link">
         AWS Datasync
       </a>
     </li>
@@ -2300,15 +2254,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicaiton-discovery-service" class="md-nav__link">
-    Applicaiton Discovery Service
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#server-migration-service-sms" class="md-nav__link">
-    Server Migration Service (SMS)
+  <a href="#demo" class="md-nav__link">
+    Demo
   </a>
   
 </li>
@@ -2326,54 +2280,51 @@
               
                 
 
-  <h1>Virtual Machinne Migration</h1>
+  <h1>Sso</h1>
 
-<h4 id="applicaiton-discovery-service">Applicaiton Discovery Service</h4>
+<h3 id="overview">Overview</h3>
 <ul>
-<li><strong>Discover</strong> on-premises <strong>infrastructure</strong><ul>
-<li>vms, cpu, memory including utilization</li>
-</ul>
+<li><span style="color:orange;font-weight:bold">Recommended for any new identity federation</span></li>
+<li>Manage SSO Access - <strong>AWS Accounts</strong> and <strong>External Applications</strong></li>
+<li>Flexible <strong>Identity Source</strong></li>
+<li>AWS SSO - <strong>Built-in identity Store</strong></li>
+<li>AWS Managed Microsoft AD</li>
+<li>On-premises Microsoft AD (<strong>Two way trust</strong> or <strong>AD Connector</strong>)</li>
+<li>External Identity Provider - <strong>SAML 2.0</strong></li>
+<li>
+<p><strong>Preffered by AWS</strong> vs traditional <code>workforce</code> identity federation</p>
 </li>
 <li>
-<p>Different modes:</p>
+<p>SSO is the **AWS perferrred workplace identity solution</p>
 <ul>
-<li>
-<p><strong>Agentless</strong> (Application Discovery Agentless Connector)</p>
-<ul>
-<li>...OVA appliance, integrates with VMWARE - inventory, vm usage</li>
-<li>measure <strong>performance</strong> and <strong>resource usage</strong> - limited to metrics that has been exposed externally</li>
+<li>also handles SSO and permissions for <strong>AWS accounts</strong> and <strong>external applications</strong></li>
+<li><span style="color:red;font-weight:bold">NOT web or customer identity</span></li>
 </ul>
 </li>
-<li>
-<p><strong>Agent Based</strong> discovery for <code>in VM</code> data gathering.</p>
-<ul>
-<li>network, processes, usage, performance</li>
-<li>more detailed metrics and informations</li>
-<li>..<strong>dependancies</strong> between servers (network activity)</li>
+<li><strong>NO</strong> associated Cost
+</br></li>
 </ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Integration with <strong>AWS Migraiton Hub</strong> and Amazon <strong>Athena</strong></p>
+<p><img alt="aws-sso" src="../aws-sso.png" /></p>
+<h3 id="demo">Demo</h3>
 <ul>
-<li>hub - tracks migration of different types within AWS</li>
-<li>athena - perform adhoc analysis of data generation</li>
+<li>Source of Identity Provider - could be default SSO built-in idenitty provider</li>
+<li>User portal<ul>
+<li>log into the get the list of all the AWS accounts that user have access to<ul>
+<li>both console an API</li>
 </ul>
 </li>
 </ul>
-<h4 id="server-migration-service-sms">Server Migration Service (SMS)</h4>
-<p>https://docs.aws.amazon.com/server-migration-service/latest/userguide/server-migration.html</p>
-<p><strong>AWS Server Migration Service (SMS)</strong> is an <strong>agentless service</strong> which makes it easier and faster for you to migrate thousands of <strong>on-premises workloads</strong> to AWS. AWS SMS allows you to <strong>automate, schedule, and track incremental replications of live server volumes</strong>, making it easier for you to coordinate large-scale server migrations.
-- Migrate whole VM's (OS, Data, Apps .. migrated as is) 
-- Runs on <strong>Agentless</strong> mode - <strong>connector</strong> runs as VM on-premise
-- Integrates with VMWare, Hyper-V and AzureVM only
-- Import/Export (anothe AWS service) - downtime
-- <strong>Incremental</strong> replication of <strong>live volumes</strong>
-- <strong>Orchestrate</strong> multi-server <strong>migrations</strong>
-- Creates <strong>AMIs</strong> which can be used to create EC2 instances
-- Integrates with <strong>AWS Migration Hub</strong></p>
-<p><img alt="migration-sms" src="../migration-sms.png" /></p>
+</li>
+<li>MFA for users - user can register and manage their own MFA devices</li>
+<li>Permission sets to define permissions<ul>
+<li>session duration (by default 1 hour --- 12 hour)</li>
+<li>users </li>
+<li>groups + permission set -- assigned them to the AWS accounts in the organization</li>
+</ul>
+</li>
+</ul>
+<p></br></p>
+<p><img alt="sso-demo" src="../sso-demo.png" /></p>
 
               
             </article>
@@ -2383,41 +2334,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../migration-database/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Database Migration" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Database Migration
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../storage-gateway/" class="md-footer__link md-footer__link--next" aria-label="Next: Storage Gateway" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Storage Gateway
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
