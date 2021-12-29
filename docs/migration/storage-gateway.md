@@ -2,6 +2,7 @@
 
 ### Storage Gateway
 [FAQS](https://aws.amazon.com/storagegateway/faqs/)
+
 - VM or the hardware appliance in on-premise
 - Supports protocols such as iSCSI, SMB, and NFS
 - **Use Cases**

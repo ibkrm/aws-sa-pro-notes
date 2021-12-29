@@ -27,6 +27,13 @@ nav:
     - AWS Resource Access Manager: permission-and-accounts/resource-access-manager.md
     - Service Quotas: permission-and-accounts/service-quotas.md
 
+  - Identities and Federation:
+    - SAML 2.0: identities-and-federation/saml2.0.md
+    - AWS SSO: identities-and-federation/sso.md
+    - Amazon Cognito: identities-and-federation/amazon-cognito.md
+    - Directory Service: identities-and-federation/directory-service.md
+    - AWS Workspaces: identities-and-federation/workspaces.md
+
   - Networking and Hybrid:
     - Public vs Private Services: networking-and-hybrid/public-private-services.md
     - DHCP: networking-and-hybrid/dhcp.md

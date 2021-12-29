@@ -11,7 +11,7 @@
     - **Public CA** - Browsers trust a list of provider, which can trust other providers.
 - ACM can **generate** or **import** certificates
     - if generated, it can **automatically renew**
-    - if imported, <span style="color:red;font-weight:bold">*you are responsible for importing it*</span>
+    - if imported, <span style="color:red;font-weight:bold">*you are responsible for renewing it*</span>
 - Certificates can be deployed only to **supported services**
     - Cloudfront, ALB ... <span style="color:red;font-weight:bold">*NOT EC2*</span>
 - ACM is a **regional service**

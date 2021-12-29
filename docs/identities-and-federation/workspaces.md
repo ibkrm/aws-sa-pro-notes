@@ -22,4 +22,6 @@
 
 ### AWS AppStream 2.0
 - Does not support Simple AD
--  
+
+Amazon AppStream 2.0 is a fully managed non-persistent desktop and application service for remotely accessing your work.
+
