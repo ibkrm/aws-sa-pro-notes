@@ -3,8 +3,10 @@
 ### Storage Gateway
 [FAQS](https://aws.amazon.com/storagegateway/faqs/)
 
-- VM or the hardware appliance in on-premise
+- **VM or the hardware appliance in on-premise**
 - Supports protocols such as iSCSI, SMB, and NFS
+- Integrates with **EBS, S3 and Glacier in AWS**
+- Migrations, extensions, storage tiering, DR and replacment of backups
 - **Use Cases**
     1. move backups and archives to the cloud
     2. reduce on-premises storage with cloud-backed file shares 

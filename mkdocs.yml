@@ -122,8 +122,8 @@ nav:
 
   - Migration:
     - 6R migration: migration/migration.md
-    - Database Migration: migration/migration-database.md
-    - Virtual Machinne Migration: migration/migration-virtual-machines.md
+    - Database Migration: migration/migration-database.mdvirtual
+    - Virtual Machinne Migration: migration/migration--machines.md
     - Storage Gateway: migration/storage-gateway.md
     - AWS Snowball: migration/snowball.md
     - AWS Datasync: migration/datasync.md
@@ -153,7 +153,9 @@ nav:
     - Kines Video Streams: miscellaneous/kinesis-video-streams.md
     - AWS Glue: miscellaneous/glue.md
     - AWS Device Farm: miscellaneous/device-farm.md
-
+  - tutorials-dojo:
+    - practice1:  tutorials-dojo/tutorials-dojo-1.md
+    - practice2:  tutorials-dojo/tutorials-dojo-2.md
 
 markdown_extensions:
   - attr_list
